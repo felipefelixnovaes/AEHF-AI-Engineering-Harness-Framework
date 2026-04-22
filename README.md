@@ -1,46 +1,100 @@
 # AI Engineering Harness Framework (AEHF)
 
-**A production-grade, open-source meta-framework for governed AI-assisted software delivery.**
+**Stop vibe coding. Start governed AI engineering.**
 
-AEHF helps teams operationalize AI in software engineering without falling into either extreme:
+AEHF is an open-source framework for AI-assisted software delivery.
+It helps teams move faster without losing structure, and add control without creating heavyweight process.
 
-- **chaotic vibe coding** (low consistency, weak memory, high rework)
-- **heavy process bureaucracy** (slow delivery, high friction, low adoption)
+AEHF is built for the space between two broken extremes:
 
-AEHF’s operating principle is:
+- **chaotic vibe coding** — fast output, weak memory, inconsistent quality, high rework
+- **heavy process bureaucracy** — rigid rituals, slow delivery, poor adoption, wasted effort
+
+Its core operating principle is:
 
 > **Minimum stable structure + depth on demand**
 
 ---
 
+## Core idea
+
+**AEHF gives AI a stable engineering harness: enough structure to stay reliable, enough flexibility to stay fast.**
+
+---
+
 ## Why AEHF exists
 
-AI can accelerate coding, but many teams struggle to sustain quality over time. Context is lost, decisions drift, and delivery practices become inconsistent across contributors and tools.
+AI can generate code quickly, but speed alone does not create reliable software delivery.
 
-AEHF provides a universal structure for:
+In real projects, teams run into the same problems repeatedly:
+
+- context gets lost between sessions and contributors
+- implementation drifts away from documentation
+- legacy systems remain poorly understood
+- change depth is not matched to process depth
+- every tool invents its own workflow
+- prompts become operational debt
+
+AEHF provides a universal operational model for AI-assisted software engineering through:
 
 - adaptive specs
 - durable project memory
 - execution control
 - lightweight governance
-- continuous framework evolution
+- continuous evolution
 
 It is intentionally **platform-agnostic** and not tied to Mission Control or any internal system.
 
 ---
 
+## What AEHF is
+
+- a framework for governed AI-assisted software delivery
+- a repository operating model for AI engineering
+- a durable documentation and memory structure
+- a tool-adapter friendly method that works across ecosystems
+
+## What AEHF is not
+
+- a replacement for LLMs
+- a multi-agent runtime by default
+- a heavy enterprise process suite
+- an app generator disguised as a framework
+
+---
+
 ## The 5 pillars
 
-1. **Adaptive Specs Layer**  
-   Match artifact depth to task complexity (Fast, Standard, Deep, Reverse).
-2. **Project Memory Layer**  
-   Treat docs as durable operational memory, not optional notes.
-3. **Execution Harness Layer**  
-   Guide model/workflow selection and reduce ambiguity and token waste.
-4. **Governance Layer**  
-   Keep quality with lightweight controls: ADRs, changelog, release checks, doc policy.
-5. **Evolution Layer**  
-   Expand safely over time (new adapters, tooling, runtime, hosted memory).
+1. **Adaptive Specs**  
+   Use the right level of rigor for the task: Fast, Standard, Deep, or Reverse.
+2. **Project Memory**  
+   Keep architecture, decisions, domains, gaps, and lessons as durable operational memory.
+3. **Execution Harness**  
+   Guide which model, workflow, and validation path to use based on risk and cost.
+4. **Lightweight Governance**  
+   Keep control through ADRs, changelogs, release checks, and documentation policy.
+5. **Built-in Evolution**  
+   Expand safely across new tools, adapters, and operating models without breaking the core method.
+
+---
+
+## Why AEHF improves AI engineering
+
+AEHF improves real-world AI delivery by reducing:
+
+- ambiguous prompts
+- repeated context dumping
+- undocumented assumptions
+- workflow drift between contributors
+- silent divergence between code and docs
+
+And it improves:
+
+- consistency
+- reviewability
+- onboarding
+- maintainability
+- cost efficiency
 
 ---
 
@@ -73,6 +127,16 @@ examples/                    # scenario-driven adoption starters
 
 ---
 
+## Get value in 15 minutes
+
+- Use `prompts/greenfield/` to start a new project with structure.
+- Use `prompts/brownfield/` to map and stabilize a legacy repository.
+- Use `docs/standards/TASK_DEPTH_POLICY.md` to classify work.
+- Use `specs/templates/` to package change safely.
+- Use adapters to deliver context to your AI tool of choice.
+
+---
+
 ## Quick start
 
 1. Clone this repository as your framework base.
@@ -82,7 +146,7 @@ examples/                    # scenario-driven adoption starters
    - **brownfield**: start from `prompts/brownfield/`
 4. Classify task depth using `docs/standards/TASK_DEPTH_POLICY.md`.
 5. Create specs under `specs/` from the corresponding templates.
-6. Execute changes and keep `docs/` updated per `DOC_UPDATE_POLICY.md`.
+6. Execute changes and keep `docs/` updated per `docs/standards/DOC_UPDATE_POLICY.md`.
 
 ---
 
