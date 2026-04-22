@@ -1,0 +1,22 @@
+name: Gap backlog item
+description: Record a framework or modernization gap
+title: "[Gap]: "
+labels: ["gap"]
+body:
+  - type: textarea
+    id: gap_statement
+    attributes:
+      label: Gap statement
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact and risk
+    validations:
+      required: true
+  - type: input
+    id: priority
+    attributes:
+      label: Priority
+      placeholder: high / medium / low

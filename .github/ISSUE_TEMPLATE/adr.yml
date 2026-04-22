@@ -1,0 +1,19 @@
+name: ADR request
+description: Request or propose an architecture decision record
+title: "[ADR]: "
+labels: ["adr"]
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Decision context
+    validations:
+      required: true
+  - type: textarea
+    id: options
+    attributes:
+      label: Alternatives considered
+  - type: textarea
+    id: impact
+    attributes:
+      label: Expected consequences
