@@ -1,5 +1,7 @@
 # AI Engineering Harness Framework (AEHF)
 
+> 🇧🇷 Leia em Português (Brasil): [README.pt-BR.md](README.pt-BR.md)
+
 **Stop vibe coding. Start governed AI engineering.**
 
 AEHF is an open-source framework for AI-assisted software delivery.
