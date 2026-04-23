@@ -1,19 +1,19 @@
-# Standard Spec Template
+# Template de Spec Standard
 
-## Problem statement
+## Declaração do problema
 
-## Desired outcome
+## Resultado desejado
 
-## Scope and boundaries
+## Escopo e limites
 
-## Constraints and assumptions
+## Restrições e suposições
 
-## Proposed approach
+## Abordagem proposta
 
-## Alternatives considered
+## Alternativas consideradas
 
-## Risks and mitigations
+## Riscos e mitigações
 
-## Validation plan
+## Plano de validação
 
-## Documentation/ADR/changelog impact
+## Impacto em documentação/ADR/changelog

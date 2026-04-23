@@ -1,107 +1,107 @@
-# What is AEHF
+# O que é o AEHF
 
-AEHF (AI Engineering Harness Framework) is a universal framework for governed AI-assisted software delivery.
+AEHF (AI Engineering Harness Framework) é um framework universal para entrega de software assistida por AI de forma governada.
 
-It is designed for teams that want the speed benefits of AI without accepting the instability, inconsistency, and context loss that often come with ad hoc AI usage.
+Foi projetado para equipes que desejam os benefícios de velocidade da AI sem aceitar a instabilidade, inconsistência e perda de contexto que frequentemente acompanham o uso ad hoc de AI.
 
-AEHF is not a model provider, not an IDE, and not a platform lock-in layer.
-It is a **meta-framework** for how software teams structure AI participation in delivery.
-
----
-
-## In one sentence
-
-AEHF gives AI a stable engineering harness: enough structure to stay reliable, enough flexibility to stay fast.
+O AEHF não é um provedor de modelos, não é uma IDE e não é uma camada de lock-in de plataforma.
+É um **meta-framework** sobre como equipes de software estruturam a participação da AI na entrega.
 
 ---
 
-## What problem it solves
+## Em uma frase
 
-Many teams fall into one of two traps:
-
-### 1. Chaotic vibe coding
-Symptoms include:
-- prompts with no durable structure
-- weak memory across sessions
-- inconsistent changes across contributors
-- missing or stale documentation
-- high rework and fragile maintenance
-
-### 2. Overweight process
-Symptoms include:
-- too many artifacts for small work
-- bureaucracy that slows delivery
-- poor adoption by real teams
-- process that looks rigorous but creates friction
-
-AEHF exists to operate in the useful middle:
-
-**minimum stable structure + depth on demand**
+O AEHF dá à AI um harness de engenharia estável: estrutura suficiente para ser confiável, flexibilidade suficiente para ser rápido.
 
 ---
 
-## What AEHF provides
+## Qual problema ele resolve
 
-AEHF provides a reusable operating model for:
+Muitas equipes caem em uma de duas armadilhas:
 
-- matching planning depth to task risk
-- turning documentation into durable operational memory
-- structuring execution across AI tools and contributors
-- applying lightweight governance without ritual bloat
-- evolving methods and adapters without breaking the core approach
+### 1. vibe coding caótico
+Os sintomas incluem:
+- prompts sem estrutura durável
+- memória fraca entre sessões
+- mudanças inconsistentes entre colaboradores
+- documentação ausente ou desatualizada
+- muito retrabalho e manutenção frágil
+
+### 2. Processo excessivamente pesado
+Os sintomas incluem:
+- artefatos demais para trabalhos pequenos
+- burocracia que desacelera a entrega
+- baixa adoção por equipes reais
+- processo que parece rigoroso mas gera atrito
+
+O AEHF existe para operar no meio útil:
+
+**estrutura mínima estável + profundidade sob demanda**
 
 ---
 
-## What makes it different
+## O que o AEHF oferece
 
-AEHF does not compete with LLMs.
-It coordinates how LLMs participate in software delivery.
+O AEHF fornece um modelo operacional reutilizável para:
 
-That means it can work alongside:
+- alinhar a profundidade de planejamento ao risco da tarefa
+- transformar documentação em memória operacional durável
+- estruturar a execução em diferentes ferramentas de AI e colaboradores
+- aplicar governança leve sem excesso ritual
+- evoluir métodos e adapters sem quebrar a abordagem central
+
+---
+
+## O que o diferencia
+
+O AEHF não compete com LLMs.
+Ele coordena como LLMs participam da entrega de software.
+
+Isso significa que pode funcionar junto com:
 - Claude
 - GitHub Copilot
 - Cursor
-- OpenAI-based tools
-- Gemini-based tools
-- local-model environments
-- future adapters not yet defined
+- ferramentas baseadas em OpenAI
+- ferramentas baseadas em Gemini
+- ambientes com modelos locais
+- adapters futuros ainda não definidos
 
-The method stays stable even as tools change.
-
----
-
-## What AEHF is not
-
-AEHF is not:
-- an application framework
-- a code generation gimmick
-- a mandatory multi-agent runtime
-- a heavyweight enterprise process suite
-- a replacement for engineering judgment
-
-It is a framework for making AI-assisted engineering more governable, more reviewable, and more durable.
+O método permanece estável mesmo quando as ferramentas mudam.
 
 ---
 
-## Who it is for
+## O que o AEHF não é
 
-AEHF is especially useful for:
-- solo developers who want speed without chaos
-- startups that need lightweight structure
-- teams modernizing legacy systems
-- software factories that need consistency across repositories
-- enterprise teams that need auditability and method without full process overload
+O AEHF não é:
+- um framework de aplicação
+- um artifício de geração de código
+- um runtime multi-agente obrigatório
+- uma suíte de processo empresarial pesada
+- um substituto para o julgamento de engenharia
+
+É um framework para tornar a engenharia assistida por AI mais governável, mais revisável e mais durável.
 
 ---
 
-## Operating model summary
+## Para quem é
 
-AEHF works through a repository-first model:
+O AEHF é especialmente útil para:
+- desenvolvedores solo que querem velocidade sem caos
+- startups que precisam de estrutura leve
+- equipes modernizando sistemas legados
+- fábricas de software que precisam de consistência entre repositórios
+- equipes corporativas que precisam de auditabilidade e método sem sobrecarga de processo
 
-- `docs/` holds durable operational memory
-- `specs/` holds structured change packages
-- `prompts/` holds reusable execution workflows
-- adapters control how different AI tools consume context
-- standards and governance keep delivery proportional and reviewable
+---
 
-This makes the repository itself part of the delivery system, not just a place to store code and notes.
+## Resumo do modelo operacional
+
+O AEHF funciona por meio de um modelo baseado no repositório:
+
+- `docs/` guarda a memória operacional durável
+- `specs/` guarda pacotes de mudança estruturados
+- `prompts/` guarda workflows de execução reutilizáveis
+- adapters controlam como diferentes ferramentas de AI consomem contexto
+- padrões e governança mantêm a entrega proporcional e revisável
+
+Isso torna o próprio repositório parte do sistema de entrega, não apenas um lugar para armazenar código e notas.

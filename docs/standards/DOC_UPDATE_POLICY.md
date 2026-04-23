@@ -1,135 +1,135 @@
-# Documentation Update Policy
+# Política de Atualização de Documentação
 
-Documentation is part of delivery.
-It is not post-work, decoration, or optional cleanup.
+A documentação faz parte da entrega.
+Não é trabalho posterior, decoração ou limpeza opcional.
 
-In AEHF, repository memory must stay synchronized with meaningful change.
-This policy defines when documentation must be updated, what should be updated, and how to prevent silent drift.
-
----
-
-## Core rule
-
-When behavior, architecture, decisions, standards, or operational understanding change, the relevant documentation must be updated in the same change package.
-
-Do not merge meaningful changes while knowingly leaving core repository memory stale.
+No AEHF, a memória do repositório deve permanecer sincronizada com mudanças relevantes.
+Esta política define quando a documentação deve ser atualizada, o que deve ser atualizado e como evitar deriva silenciosa.
 
 ---
 
-## What requires documentation updates
+## Regra fundamental
 
-Update relevant documentation whenever any of the following changes:
+Quando comportamento, arquitetura, decisões, padrões ou entendimento operacional mudam, a documentação relevante deve ser atualizada no mesmo pacote de mudança.
 
-- behavior visible to users, operators, or integrators
-- architecture or module boundaries
-- domain rules or assumptions
-- standards, process, or governance rules
-- release, validation, or operational procedures
-- known gaps, discrepancies, or risks
-- architecture understanding discovered during brownfield or reverse work
-- lessons that should influence future execution
+Não faça merge de mudanças relevantes deixando conscientemente a memória central do repositório desatualizada.
 
 ---
 
-## Minimum sync set
+## O que requer atualizações de documentação
 
-For a meaningful change, review and update the smallest correct set of these artifacts:
+Atualize a documentação relevante sempre que qualquer um dos itens a seguir mudar:
 
-- affected files in `docs/`
-- affected change package in `specs/`
-- `CHANGELOG.md` for externally or operationally meaningful changes
-- ADRs for architecture-significant or policy-significant decisions
-- gap or discrepancy records when newly discovered issues appear
-- lessons when reusable insight was generated
-
-The goal is not to update everything.
-The goal is to update every source of truth that would otherwise become misleading.
+- comportamento visível para usuários, operadores ou integradores
+- arquitetura ou limites de módulo
+- regras ou premissas de domínio
+- padrões, processos ou regras de governança
+- procedimentos de release, validação ou operacionais
+- lacunas conhecidas, discrepâncias ou riscos
+- entendimento de arquitetura descoberto durante trabalho brownfield ou Reverse
+- lições que devem influenciar execuções futuras
 
 ---
 
-## Typical update mapping
+## Conjunto mínimo de sincronização
 
-### If observable behavior changes
-Usually update:
-- relevant spec package in `specs/`
-- relevant domain files in `docs/domains/`
-- relevant architecture docs if boundaries or flows changed
+Para uma mudança relevante, revise e atualize o menor conjunto correto destes artefatos:
+
+- arquivos afetados em `docs/`
+- pacote de mudança afetado em `specs/`
+- `CHANGELOG.md` para mudanças com impacto externo ou operacional
+- ADRs para decisões de relevância arquitetural ou de política
+- registros de lacuna ou discrepância quando novos problemas forem descobertos
+- lições quando um aprendizado reutilizável for gerado
+
+O objetivo não é atualizar tudo.
+O objetivo é atualizar toda fonte de verdade que, de outra forma, se tornaria enganosa.
+
+---
+
+## Mapeamento típico de atualizações
+
+### Se o comportamento observável mudar
+Normalmente atualizar:
+- pacote de spec relevante em `specs/`
+- arquivos de domínio relevantes em `docs/domains/`
+- docs de arquitetura relevantes se limites ou fluxos mudaram
 - `CHANGELOG.md`
 
-### If architecture understanding changes
-Usually update:
+### Se o entendimento da arquitetura mudar
+Normalmente atualizar:
 - `docs/architecture/`
-- relevant domain docs
-- ADRs if a decision was made
-- relevant gaps if tradeoffs or limitations remain
+- docs de domínio relevantes
+- ADRs se uma decisão foi tomada
+- lacunas relevantes se trade-offs ou limitações permanecerem
 
-### If a new rule or standard is introduced
-Usually update:
+### Se uma nova regra ou padrão for introduzido
+Normalmente atualizar:
 - `docs/standards/`
-- `README.md` if contributor-facing expectations changed
-- `CONTRIBUTING.md` if contribution workflow changed
+- `README.md` se as expectativas voltadas ao contribuidor mudaram
+- `CONTRIBUTING.md` se o fluxo de contribuição mudou
 
-### If legacy behavior is discovered during reverse work
-Usually update:
+### Se comportamento legado for descoberto durante trabalho Reverse
+Normalmente atualizar:
 - `docs/as-is/`
 - `docs/gaps/`
-- relevant domain docs
-- related spec package
+- docs de domínio relevantes
+- pacote de spec relacionado
 
-### If a reusable lesson emerges
-Usually update:
+### Se uma lição reutilizável emergir
+Normalmente atualizar:
 - `docs/lessons/`
-- relevant standards if the lesson becomes a durable rule
+- padrões relevantes se a lição se tornar uma regra durável
 
 ---
 
-## Drift prevention checklist
+## Checklist de prevenção de deriva
 
-Before completing a change, ask:
+Antes de concluir uma mudança, pergunte:
 
-- Does the implementation still match the described behavior?
-- Do the docs still describe current assumptions and constraints?
-- Did the architecture understanding change?
-- Was a decision made that deserves an ADR?
-- Was a gap, discrepancy, or operational risk discovered?
-- Is the changelog updated for meaningful change?
-- Would a new contributor be misled if docs were left as-is?
+- A implementação ainda corresponde ao comportamento descrito?
+- Os docs ainda descrevem as premissas e restrições atuais?
+- O entendimento da arquitetura mudou?
+- Foi tomada uma decisão que merece um ADR?
+- Foi descoberta uma lacuna, discrepância ou risco operacional?
+- O changelog está atualizado para a mudança relevante?
+- Um novo contribuidor seria enganado se os docs fossem deixados como estão?
 
-If the answer to any of these is yes, update the relevant repository memory.
-
----
-
-## Anti-patterns
-
-Avoid:
-
-- postponing obvious doc updates to a vague later cleanup
-- treating stale docs as acceptable because the code is “the real source of truth”
-- changing behavior under the label of refactor without updating memory
-- over-updating unrelated documents just to look thorough
-- writing aspirational docs that do not reflect current reality
+Se a resposta a qualquer uma dessas perguntas for sim, atualize a memória relevante do repositório.
 
 ---
 
-## Quality bar
+## Anti-padrões
 
-Good documentation updates are:
+Evite:
 
-- factual
-- targeted
-- durable
-- aligned with actual implementation and decisions
-- useful for future contributors and AI tools
-
-Poor documentation updates are:
-
-- vague
-- overly broad
-- disconnected from reality
-- missing the actual source of truth that changed
+- adiar atualizações óbvias de docs para uma limpeza vaga no futuro
+- tratar docs desatualizados como aceitáveis porque o código é "a verdadeira fonte de verdade"
+- mudar comportamento sob o rótulo de refatoração sem atualizar a memória
+- atualizar em excesso documentos não relacionados apenas para parecer minucioso
+- escrever docs aspiracionais que não refletem a realidade atual
 
 ---
 
-## Final rule
+## Barra de qualidade
 
-If a meaningful change would cause future readers, contributors, or AI tools to form the wrong understanding of the system, the documentation update is not optional.
+Boas atualizações de documentação são:
+
+- factuais
+- direcionadas
+- duráveis
+- alinhadas com a implementação e decisões reais
+- úteis para futuros contribuidores e ferramentas de AI
+
+Más atualizações de documentação são:
+
+- vagas
+- excessivamente amplas
+- desconectadas da realidade
+- omitem a fonte de verdade real que mudou
+
+---
+
+## Regra final
+
+Se uma mudança relevante fizer com que futuros leitores, contribuidores ou ferramentas de AI formem um entendimento incorreto do sistema, a atualização da documentação não é opcional.

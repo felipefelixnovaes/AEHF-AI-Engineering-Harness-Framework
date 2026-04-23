@@ -1,6 +1,6 @@
-# Frontend Instructions
+# Instruções de Frontend
 
-- Keep UX behavior stable unless change is deliberate and documented.
-- Favor incremental UI/API integration changes.
-- Document state/interaction assumptions.
-- Sync docs when user-visible behavior changes.
+- Manter o comportamento de UX estável salvo se a mudança for deliberada e documentada.
+- Favorecer mudanças incrementais de integração UI/API.
+- Documentar premissas de estado/interação.
+- Sincronizar docs quando o comportamento visível ao usuário mudar.

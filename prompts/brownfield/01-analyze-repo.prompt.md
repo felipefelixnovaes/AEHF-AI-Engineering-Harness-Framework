@@ -1,32 +1,32 @@
-# 01 - Analyze Repository
+# 01 - Analisar Repositório
 
-## Purpose
+## Propósito
 
-Build an evidence-based understanding of an existing codebase before proposing changes.
+Construir uma compreensão baseada em evidências de uma base de código existente antes de propor alterações.
 
-## When to use
+## Quando usar
 
-At the start of brownfield engagement.
+No início de um engajamento brownfield.
 
-## Required inputs
+## Entradas necessárias
 
-- Repository path and tech stack
-- Current pain points
-- Available docs and runbooks
+- Caminho do repositório e stack tecnológica
+- Pontos de dor atuais
+- docs e runbooks disponíveis
 
-## Instructions to the AI
+## Instruções para o AI
 
-1. Summarize repository structure and module boundaries.
-2. Identify missing/obsolete docs and standards.
-3. Highlight ambiguity and risk zones.
-4. Recommend next brownfield prompts.
+1. Resumir a estrutura do repositório e os limites dos módulos.
+2. Identificar docs e padrões ausentes ou obsoletos.
+3. Destacar zonas de ambiguidade e risco.
+4. Recomendar os próximos prompts brownfield.
 
-## Expected outputs
+## Saídas esperadas
 
-- Repository analysis brief
-- Risk and ambiguity list
-- Prioritized next actions
+- Relatório de análise do repositório
+- Lista de riscos e ambiguidades
+- Próximas ações priorizadas
 
-## Completion criteria
+## Critérios de conclusão
 
-Team has a practical baseline for inventory and hotspot analysis.
+O time possui uma linha de base prática para análise de inventário e hotspots.

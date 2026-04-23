@@ -1,15 +1,15 @@
 # CLAUDE Adapter Entry Point
 
-This repository follows AEHF.
-Use this file as a strict operating contract when working in Claude-style environments.
+Este repositório segue o AEHF.
+Use este arquivo como um contrato operacional estrito ao trabalhar em ambientes no estilo Claude.
 
-Its purpose is to provide a short, high-priority entry point into the repository's method, memory, and execution rules.
+Seu propósito é fornecer um ponto de entrada curto e de alta prioridade para o método, a memória e as regras de execução do repositório.
 
 ---
 
-## Read first
+## Leia primeiro
 
-Follow this reading order before proposing non-trivial changes:
+Siga esta ordem de leitura antes de propor mudanças não triviais:
 
 1. `README.md`
 2. `docs/constitution/CONSTITUTION.md`
@@ -19,82 +19,82 @@ Follow this reading order before proposing non-trivial changes:
 6. `docs/standards/DOC_UPDATE_POLICY.md`
 7. `AGENTS.md`
 
-If a task touches a specific domain or spec package, also read:
+Se uma tarefa tocar um domínio específico ou pacote de spec, leia também:
 
-- the relevant file under `docs/domains/`
-- the relevant feature package under `specs/`
-- related decisions under `docs/decisions/`
-- relevant gaps under `docs/gaps/`
-
----
-
-## Repository model
-
-Treat the repository as four coordinated layers:
-
-- `docs/` = durable operational memory and source of truth
-- `specs/` = per-change execution package
-- `prompts/` = reusable execution library
-- `docs/lessons/` = evolutionary memory
-
-Do not treat documentation as optional commentary.
-In AEHF, documentation is part of the operating system of delivery.
+- o arquivo relevante em `docs/domains/`
+- o pacote de funcionalidade relevante em `specs/`
+- decisões relacionadas em `docs/decisions/`
+- lacunas relevantes em `docs/gaps/`
 
 ---
 
-## Mandatory operating rules
+## Modelo do repositório
 
-- Classify task depth before proposing artifacts or workflow.
-- Prefer incremental change over rewrite.
-- Preserve current behavior unless an intentional change is explicitly documented.
-- Use existing patterns before introducing new ones.
-- Update `docs/`, `specs/`, and `CHANGELOG.md` when behavior, decisions, architecture, or standards change.
-- Record assumptions explicitly.
-- Do not invent certainty where evidence is missing.
-- Escalate to human validation when risk or ambiguity is high.
+Trate o repositório como quatro camadas coordenadas:
+
+- `docs/` = memória operacional durável e fonte da verdade
+- `specs/` = pacote de execução por mudança
+- `prompts/` = biblioteca de execução reutilizável
+- `docs/lessons/` = memória evolutiva
+
+Não trate a documentação como comentário opcional.
+No AEHF, a documentação faz parte do sistema operacional da entrega.
 
 ---
 
-## Task depth model
+## Regras operacionais obrigatórias
 
-Always classify work using `docs/standards/TASK_DEPTH_POLICY.md`.
+- Classificar a profundidade da tarefa antes de propor artefatos ou fluxo de trabalho.
+- Preferir mudança incremental em vez de reescrita.
+- Preservar o comportamento atual salvo se uma mudança intencional estiver explicitamente documentada.
+- Usar padrões existentes antes de introduzir novos.
+- Atualizar `docs/`, `specs/` e `CHANGELOG.md` quando comportamento, decisões, arquitetura ou padrões mudarem.
+- Registrar premissas explicitamente.
+- Não inventar certeza onde há evidências ausentes.
+- Escalar para validação humana quando o risco ou a ambiguidade for alto.
+
+---
+
+## Modelo de profundidade de tarefas
+
+Sempre classifique o trabalho usando `docs/standards/TASK_DEPTH_POLICY.md`.
 
 Use:
-- **Fast** for small low-risk local changes
-- **Standard** for normal feature or flow changes
-- **Deep** for high-risk, multi-module, or contract-affecting changes
-- **Reverse** for legacy systems without reliable documentation
+- **Fast** para mudanças locais pequenas e de baixo risco
+- **Standard** para mudanças normais de funcionalidade ou fluxo
+- **Deep** para mudanças de alto risco, multi-módulo ou que afetam contratos
+- **Reverse** para sistemas legados sem documentação confiável
 
-The selected depth determines:
-- how much planning is required
-- which artifacts must exist
-- what level of validation is appropriate
-- how much governance is necessary
-
----
-
-## Change behavior rules
-
-When making changes:
-
-- prefer touch-and-raise over speculative rewrite
-- preserve external contracts unless the contract change is deliberate and documented
-- keep code, specs, and docs synchronized
-- make uncertainty visible
-- favor explicit tradeoffs over silent drift
-
-When reviewing or reasoning:
-
-- distinguish facts from assumptions
-- distinguish current behavior from intended behavior
-- distinguish repo truth from tool preference
+A profundidade selecionada determina:
+- quanto planejamento é necessário
+- quais artefatos devem existir
+- qual nível de validação é apropriado
+- quanta governança é necessária
 
 ---
 
-## Documentation update rules
+## Regras de comportamento de mudança
 
-When behavior or understanding changes, update the affected sources of truth.
-This may include:
+Ao fazer mudanças:
+
+- preferir touch-and-raise em vez de reescrita especulativa
+- preservar contratos externos salvo se a mudança de contrato for deliberada e documentada
+- manter código, specs e docs sincronizados
+- tornar a incerteza visível
+- favorecer trade-offs explícitos em vez de desvio silencioso
+
+Ao revisar ou raciocinar:
+
+- distinguir fatos de premissas
+- distinguir comportamento atual de comportamento pretendido
+- distinguir verdade do repositório de preferência de ferramenta
+
+---
+
+## Regras de atualização de documentação
+
+Quando o comportamento ou o entendimento mudar, atualize as fontes da verdade afetadas.
+Isso pode incluir:
 
 - `docs/architecture/`
 - `docs/domains/`
@@ -104,31 +104,31 @@ This may include:
 - `specs/`
 - `CHANGELOG.md`
 
-Do not silently leave documentation stale after meaningful changes.
+Não deixe a documentação desatualizada silenciosamente após mudanças significativas.
 
 ---
 
-## Role guidance
+## Orientação de papéis
 
-Use `AGENTS.md` to determine role separation.
-At minimum, maintain clarity between:
+Use `AGENTS.md` para determinar a separação de papéis.
+No mínimo, mantenha clareza entre:
 
-- orchestration
-- implementation
-- review
-- validation
-- documentation
+- orquestração
+- implementação
+- revisão
+- validação
+- documentação
 
-A single actor may perform multiple roles, but the responsibilities must remain separate.
+Um único ator pode desempenhar múltiplos papéis, mas as responsabilidades devem permanecer separadas.
 
 ---
 
-## Default stance
+## Postura padrão
 
-When in doubt:
+Na dúvida:
 
-- choose the smallest reliable step
-- preserve behavior
-- make assumptions explicit
-- update the memory of the project
-- prefer clarity over speed theater
+- escolha o menor passo confiável
+- preserve o comportamento
+- torne as premissas explícitas
+- atualize a memória do projeto
+- prefira clareza a teatro de velocidade

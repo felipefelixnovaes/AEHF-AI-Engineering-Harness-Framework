@@ -1,6 +1,6 @@
-# Documentation Instructions
+# Instruções de Documentação
 
-- Treat docs as operational memory, not optional narrative.
-- Remove stale statements; do not append contradictory text.
-- Ensure docs/specs/changelog remain synchronized.
-- Keep updates concise, testable, and evidence-based.
+- Tratar docs como memória operacional, não como narrativa opcional.
+- Remover declarações desatualizadas; não adicionar texto contraditório.
+- Garantir que docs/specs/changelog permaneçam sincronizados.
+- Manter atualizações concisas, verificáveis e baseadas em evidências.

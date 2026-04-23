@@ -1,16 +1,16 @@
-# Validation Template
+# Template de Validação
 
-## Validation scope
+## Escopo de validação
 
-## Executed checks
+## Verificações executadas
 
 - Build:
-- Tests:
-- Security:
-- Manual verification:
+- Testes:
+- Segurança:
+- Verificação manual:
 
-## Results summary
+## Resumo dos resultados
 
-## Residual risks
+## Riscos residuais
 
-## Release recommendation
+## Recomendação de release

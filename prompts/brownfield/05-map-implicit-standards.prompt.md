@@ -1,32 +1,32 @@
-# 05 - Map Implicit Standards
+# 05 - Mapear Padrões Implícitos
 
-## Purpose
+## Propósito
 
-Discover de facto coding and operational standards present in the legacy codebase.
+Descobrir padrões de codificação e operacionais de facto presentes na base de código legada.
 
-## When to use
+## Quando usar
 
-When standards are undocumented or inconsistent.
+Quando os padrões não estão documentados ou são inconsistentes.
 
-## Required inputs
+## Entradas necessárias
 
-- Representative code samples
-- Existing reviews/PR patterns
-- Team conventions (if known)
+- Amostras de código representativas
+- Padrões de revisões/PR existentes
+- Convenções do time (se conhecidas)
 
-## Instructions to the AI
+## Instruções para o AI
 
-1. Infer recurring conventions and constraints.
-2. Separate reliable patterns from accidental inconsistencies.
-3. Propose explicit standards documentation updates.
-4. Identify migration risk if standards are changed.
+1. Inferir convenções e restrições recorrentes.
+2. Separar padrões confiáveis de inconsistências acidentais.
+3. Propor atualizações explícitas na documentação de padrões.
+4. Identificar risco de migração caso os padrões sejam alterados.
 
-## Expected outputs
+## Saídas esperadas
 
-- Implicit standards map
-- Recommended explicit standards
-- Adoption risk notes
+- Mapa de padrões implícitos
+- Padrões explícitos recomendados
+- Notas de risco de adoção
 
-## Completion criteria
+## Critérios de conclusão
 
-Standards-in-practice are explicit enough to reduce implementation ambiguity.
+Os padrões em prática são suficientemente explícitos para reduzir ambiguidade de implementação.

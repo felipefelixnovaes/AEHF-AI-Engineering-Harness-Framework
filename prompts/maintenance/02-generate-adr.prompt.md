@@ -1,30 +1,30 @@
-# 02 - Generate ADR
+# 02 - Gerar ADR
 
-## Purpose
+## Propósito
 
-Capture significant architectural or process decisions with rationale and consequences.
+Capturar decisões arquiteturais ou de processo significativas com justificativa e consequências.
 
-## When to use
+## Quando usar
 
-When a decision has durable impact beyond one local change.
+Quando uma decisão tem impacto durável além de uma mudança local.
 
-## Required inputs
+## Entradas necessárias
 
-- Decision context
-- Considered alternatives
-- Constraints and risks
+- Contexto da decisão
+- Alternativas consideradas
+- Restrições e riscos
 
-## Instructions to the AI
+## Instruções para a AI
 
-1. Populate ADR template with factual context.
-2. Compare selected option with alternatives.
-3. Record consequences and follow-up actions.
-4. Define validation and rollback expectations.
+1. Preencher o template de ADR com contexto factual.
+2. Comparar a opção selecionada com as alternativas.
+3. Registrar consequências e ações de acompanhamento.
+4. Definir expectativas de validação e rollback.
 
-## Expected outputs
+## Saídas esperadas
 
-- ADR draft ready for review
+- Rascunho de ADR pronto para revisão
 
-## Completion criteria
+## Critérios de conclusão
 
-Decision is auditable and understandable by future contributors.
+A decisão é auditável e compreensível por colaboradores futuros.

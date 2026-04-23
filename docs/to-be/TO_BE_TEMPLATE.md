@@ -1,13 +1,13 @@
-# TO-BE Template
+# Template TO-BE
 
-## Target outcomes
+## Resultados alvo
 
-## Desired architecture
+## Arquitetura desejada
 
-## Capability deltas
+## Deltas de capacidade
 
-## Migration strategy
+## Estratégia de migração
 
-## Risks and mitigations
+## Riscos e mitigações
 
-## Success metrics
+## Métricas de sucesso

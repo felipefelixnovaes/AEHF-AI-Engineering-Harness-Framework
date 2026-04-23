@@ -1,61 +1,61 @@
 # AEHF Operational Agents
 
-This file defines AEHF execution roles for AI-assisted software delivery.
-These are **operational roles**, not personalities.
+Este arquivo define os papéis de execução do AEHF para entrega de software assistida por AI.
+São **papéis operacionais**, não personalidades.
 
-Their purpose is to reduce ambiguity, separate responsibilities, and improve handoffs between planning, execution, review, validation, and documentation.
+Seu propósito é reduzir ambiguidades, separar responsabilidades e melhorar as transições entre planejamento, execução, revisão, validação e documentação.
 
-## How to use this file
+## Como usar este arquivo
 
-Use these roles as a routing model for work.
-A single human or AI assistant may perform multiple roles, but the responsibilities must remain distinct.
+Use esses papéis como um modelo de roteamento para o trabalho.
+Uma única pessoa ou assistente de AI pode desempenhar múltiplos papéis, mas as responsabilidades devem permanecer distintas.
 
-Before starting work:
+Antes de iniciar o trabalho:
 
-1. classify task depth
-2. identify the primary role driving the task
-3. identify which supporting roles are required
-4. define the artifacts that must be consulted or updated
+1. classificar a profundidade da tarefa
+2. identificar o papel principal que conduz a tarefa
+3. identificar quais papéis de suporte são necessários
+4. definir os artefatos que devem ser consultados ou atualizados
 
 ---
 
 ## 1) Orchestrator
 
-### Purpose
-Plan work, classify depth, select the correct workflow, and route tasks to the right role.
+### Propósito
+Planejar o trabalho, classificar a profundidade, selecionar o fluxo de trabalho correto e rotear tarefas para o papel adequado.
 
-### Primary responsibility
-Turn an incoming request into a governed execution path.
+### Responsabilidade principal
+Transformar uma solicitação recebida em um caminho de execução governado.
 
-### Inputs
-- task request
-- constraints and success criteria
-- current repository state
-- architecture and domain context
-- standards and governance docs
+### Entradas
+- solicitação de tarefa
+- restrições e critérios de sucesso
+- estado atual do repositório
+- contexto de arquitetura e domínio
+- documentos de padrões e governança
 
-### Outputs
-- chosen task depth
-- workflow recommendation
-- artifact plan
-- role assignment or handoff plan
-- explicit assumptions and open questions
+### Saídas
+- profundidade de tarefa escolhida
+- recomendação de fluxo de trabalho
+- plano de artefatos
+- plano de atribuição de papéis ou de transição
+- premissas explícitas e questões em aberto
 
-### Boundaries
-- does not perform large implementation work directly unless the task is trivial
-- must not skip depth classification
-- must not invent missing context without labeling it as assumption
+### Limites
+- não realiza trabalho de implementação extenso diretamente, salvo se a tarefa for trivial
+- não deve pular a classificação de profundidade
+- não deve inventar contexto ausente sem rotulá-lo como premissa
 
-### When to use
-- at the start of any non-trivial task
-- when the correct workflow is unclear
-- when multiple modules or artifacts are involved
-- when balancing speed, cost, and risk
+### Quando usar
+- no início de qualquer tarefa não trivial
+- quando o fluxo de trabalho correto não está claro
+- quando múltiplos módulos ou artefatos estão envolvidos
+- ao equilibrar velocidade, custo e risco
 
-### When not to use
-- for tiny local edits with no coordination or documentation impact
+### Quando não usar
+- para edições locais minúsculas sem impacto de coordenação ou documentação
 
-### Consult first
+### Consultar primeiro
 - `README.md`
 - `docs/constitution/CONSTITUTION.md`
 - `docs/standards/TASK_DEPTH_POLICY.md`
@@ -65,106 +65,106 @@ Turn an incoming request into a governed execution path.
 
 ## 2) Implementer
 
-### Purpose
-Execute approved code, documentation, spec, or configuration changes incrementally.
+### Propósito
+Executar incrementalmente alterações aprovadas de código, documentação, spec ou configuração.
 
-### Primary responsibility
-Produce correct, traceable changes that respect the chosen workflow and repository standards.
+### Responsabilidade principal
+Produzir mudanças corretas e rastreáveis que respeitem o fluxo de trabalho escolhido e os padrões do repositório.
 
-### Inputs
-- spec artifacts
-- accepted plan
-- architecture and domain docs
-- coding and documentation standards
-- existing implementation patterns
+### Entradas
+- artefatos de spec
+- plano aceito
+- docs de arquitetura e domínio
+- padrões de codificação e documentação
+- padrões de implementação existentes
 
-### Outputs
-- working changes
-- updated artifacts
-- implementation notes when needed
-- traceable commit-ready diffs
+### Saídas
+- mudanças funcionais
+- artefatos atualizados
+- notas de implementação quando necessário
+- diffs rastreáveis prontos para commit
 
-### Boundaries
-- must not bypass governance rules
-- must not rewrite broadly when an incremental path exists
-- must not introduce new patterns before checking existing conventions
-- must not silently change external behavior
+### Limites
+- não deve contornar regras de governança
+- não deve reescrever amplamente quando existe um caminho incremental
+- não deve introduzir novos padrões sem verificar as convenções existentes
+- não deve alterar silenciosamente o comportamento externo
 
-### When to use
-- feature implementation
-- bug fixes
-- refactors
-- migration slices
-- documentation-aligned changes
+### Quando usar
+- implementação de funcionalidades
+- correções de bugs
+- refatorações
+- fatias de migração
+- mudanças alinhadas à documentação
 
-### When not to use
-- independent quality sign-off
-- architecture approval
-- release readiness decisions
+### Quando não usar
+- aprovação independente de qualidade
+- aprovação de arquitetura
+- decisões de prontidão para lançamento
 
-### Execution rules
-- prefer touch-and-raise over rewrite
-- preserve behavior unless intentional change is documented
-- update touched docs when behavior, structure, or decisions change
-- flag uncertainty instead of guessing
+### Regras de execução
+- preferir touch-and-raise em vez de reescrita
+- preservar o comportamento salvo se a mudança intencional estiver documentada
+- atualizar os docs tocados quando comportamento, estrutura ou decisões mudarem
+- sinalizar incerteza em vez de adivinhar
 
-### Consult first
+### Consultar primeiro
 - `docs/standards/CODING_STANDARDS.md`
 - `docs/standards/DOC_UPDATE_POLICY.md`
 - `docs/standards/TOUCH_AND_RAISE_PATTERN.md`
-- relevant files under `docs/domains/`
-- relevant spec package under `specs/`
+- arquivos relevantes em `docs/domains/`
+- pacote de spec relevante em `specs/`
 
 ---
 
 ## 3) Reviewer
 
-### Purpose
-Evaluate correctness, change quality, risk, clarity, and standards compliance.
+### Propósito
+Avaliar correção, qualidade da mudança, risco, clareza e conformidade com padrões.
 
-### Primary responsibility
-Prevent weak, unclear, or undocumented changes from passing as acceptable delivery.
+### Responsabilidade principal
+Impedir que mudanças fracas, pouco claras ou não documentadas sejam aceitas como entrega adequada.
 
-### Inputs
+### Entradas
 - diffs
 - specs
 - ADRs
-- architecture and domain docs
-- standards and governance rules
+- docs de arquitetura e domínio
+- regras de padrões e governança
 
-### Outputs
-- review findings
-- approval or change requests
-- risk notes
-- documentation drift findings
-- standards compliance assessment
+### Saídas
+- descobertas da revisão
+- aprovação ou solicitações de mudança
+- notas de risco
+- descobertas de desvio de documentação
+- avaliação de conformidade com padrões
 
-### Boundaries
-- should not approve undocumented behavior changes
-- should not treat stylistic preference as higher priority than correctness and clarity
-- should not act as a substitute for validation or test execution
+### Limites
+- não deve aprovar mudanças de comportamento não documentadas
+- não deve tratar preferência estilística como prioridade maior do que correção e clareza
+- não deve agir como substituto para validação ou execução de testes
 
-### When to use
-- before merge
-- before release readiness decisions
-- after meaningful refactors
-- when external contracts or multiple modules changed
+### Quando usar
+- antes do merge
+- antes de decisões de prontidão para lançamento
+- após refatorações significativas
+- quando contratos externos ou múltiplos módulos foram alterados
 
-### When not to use
-- as a replacement for implementation planning
-- as a substitute for automated validation
+### Quando não usar
+- como substituto para planejamento de implementação
+- como substituto para validação automatizada
 
-### Review rules
-- compare the change against the intended depth
-- check whether affected docs were updated
-- look for silent contract drift
-- identify missing tests or missing validation evidence
-- prefer actionable review comments over vague criticism
+### Regras de revisão
+- comparar a mudança com a profundidade pretendida
+- verificar se os docs afetados foram atualizados
+- identificar desvio silencioso de contratos
+- identificar testes ausentes ou evidências de validação ausentes
+- preferir comentários de revisão acionáveis a críticas vagas
 
-### Consult first
-- changed spec package in `specs/`
-- relevant files in `docs/decisions/`
-- relevant files in `docs/domains/`
+### Consultar primeiro
+- pacote de spec alterado em `specs/`
+- arquivos relevantes em `docs/decisions/`
+- arquivos relevantes em `docs/domains/`
 - `docs/standards/CODING_STANDARDS.md`
 - `docs/standards/DOC_UPDATE_POLICY.md`
 
@@ -172,131 +172,131 @@ Prevent weak, unclear, or undocumented changes from passing as acceptable delive
 
 ## 4) Validator
 
-### Purpose
-Confirm that the change is ready from an execution, quality, and risk perspective.
+### Propósito
+Confirmar que a mudança está pronta do ponto de vista de execução, qualidade e risco.
 
-### Primary responsibility
-Provide a grounded go / no-go recommendation with visible residual risk.
+### Responsabilidade principal
+Fornecer uma recomendação fundamentada de prosseguir / não prosseguir com o risco residual visível.
 
-### Inputs
-- final change package
-- test or verification evidence
-- review findings
-- rollout or release criteria
-- risk prompts and standards
+### Entradas
+- pacote final de mudança
+- evidências de teste ou verificação
+- descobertas da revisão
+- critérios de lançamento ou rollout
+- prompts de risco e padrões
 
-### Outputs
-- validation summary
-- pass / fail / conditional pass recommendation
-- residual risk notes
-- missing evidence list
+### Saídas
+- resumo de validação
+- recomendação de aprovação / reprovação / aprovação condicional
+- notas de risco residual
+- lista de evidências ausentes
 
-### Boundaries
-- must report uncertainty clearly
-- must not claim readiness without evidence
-- must not treat absence of evidence as evidence of correctness
+### Limites
+- deve relatar incerteza claramente
+- não deve afirmar prontidão sem evidências
+- não deve tratar ausência de evidência como evidência de correção
 
-### When to use
-- after implementation
-- before release or merge of meaningful changes
-- before operational rollout
-- when risk, impact, or ambiguity is high
+### Quando usar
+- após a implementação
+- antes do lançamento ou merge de mudanças significativas
+- antes do rollout operacional
+- quando risco, impacto ou ambiguidade é alto
 
-### When not to use
-- during early ideation
-- when the task is still structurally undefined
+### Quando não usar
+- durante a idealização inicial
+- quando a tarefa ainda está estruturalmente indefinida
 
-### Validation rules
-- validate observable behavior, not intent alone
-- confirm that documentation and implementation do not drift silently
-- check that assumptions were either resolved or explicitly recorded
-- escalate to human review when risk exceeds confidence
+### Regras de validação
+- validar comportamento observável, não apenas intenção
+- confirmar que documentação e implementação não divergem silenciosamente
+- verificar se as premissas foram resolvidas ou explicitamente registradas
+- escalar para revisão humana quando o risco superar a confiança
 
-### Consult first
+### Consultar primeiro
 - `docs/runbooks/RELEASE_CHECKLIST.md`
-- relevant `review.md` and `validate.md` artifacts under `specs/`
+- artefatos `review.md` e `validate.md` relevantes em `specs/`
 - `docs/standards/TASK_DEPTH_POLICY.md`
 
 ---
 
 ## 5) Documentarian
 
-### Purpose
-Keep durable project memory synchronized with actual behavior, decisions, standards, and lessons.
+### Propósito
+Manter a memória durável do projeto sincronizada com o comportamento real, decisões, padrões e lições aprendidas.
 
-### Primary responsibility
-Ensure the repository remains understandable and trustworthy over time.
+### Responsabilidade principal
+Garantir que o repositório permaneça compreensível e confiável ao longo do tempo.
 
-### Inputs
-- implemented changes
-- architecture shifts
-- decisions made
-- review findings
-- lessons learned
-- operational risks or gaps discovered
+### Entradas
+- mudanças implementadas
+- mudanças de arquitetura
+- decisões tomadas
+- descobertas da revisão
+- lições aprendidas
+- riscos operacionais ou lacunas descobertas
 
-### Outputs
-- updated docs
-- updated specs
-- ADRs when needed
-- changelog entries
-- lessons entries
-- gap or discrepancy updates
+### Saídas
+- docs atualizados
+- specs atualizados
+- ADRs quando necessário
+- entradas de changelog
+- entradas de lições
+- atualizações de lacunas ou discrepâncias
 
-### Boundaries
-- should not alter technical behavior independently
-- should not invent architecture or decisions not supported by evidence
-- should not leave meaningful behavior changes undocumented
+### Limites
+- não deve alterar o comportamento técnico de forma independente
+- não deve inventar arquitetura ou decisões sem suporte de evidências
+- não deve deixar mudanças de comportamento significativas sem documentação
 
-### When to use
-- whenever behavior, architecture, standards, or process changed
-- after incidents, migrations, or important reviews
-- when new knowledge about legacy behavior is surfaced
+### Quando usar
+- sempre que comportamento, arquitetura, padrões ou processo mudarem
+- após incidentes, migrações ou revisões importantes
+- quando novo conhecimento sobre comportamento legado for revelado
 
-### When not to use
-- for truly no-op changes with no documentation impact
+### Quando não usar
+- para mudanças verdadeiramente sem efeito e sem impacto na documentação
 
-### Documentation rules
-- treat `docs/` as durable operational memory
-- treat `specs/` as the change package
-- treat `prompts/` as reusable execution assets
-- treat `docs/lessons/` as evolutionary memory
-- prefer factual updates over aspirational prose
+### Regras de documentação
+- tratar `docs/` como memória operacional durável
+- tratar `specs/` como o pacote de mudança
+- tratar `prompts/` como ativos de execução reutilizáveis
+- tratar `docs/lessons/` como memória evolutiva
+- preferir atualizações factuais a prosa aspiracional
 
-### Consult first
+### Consultar primeiro
 - `docs/standards/DOC_UPDATE_POLICY.md`
 - `CHANGELOG.md`
-- relevant files under `docs/architecture/`, `docs/domains/`, `docs/decisions/`, `docs/gaps/`, and `docs/lessons/`
+- arquivos relevantes em `docs/architecture/`, `docs/domains/`, `docs/decisions/`, `docs/gaps/` e `docs/lessons/`
 
 ---
 
-## Default routing by task type
+## Roteamento padrão por tipo de tarefa
 
-### Small local bug fix
-- Primary: Implementer
-- Support: Reviewer, Documentarian
+### Correção local de bug pequeno
+- Principal: Implementer
+- Suporte: Reviewer, Documentarian
 
-### New feature in one area
-- Primary: Orchestrator → Implementer
-- Support: Reviewer, Documentarian
+### Nova funcionalidade em uma área
+- Principal: Orchestrator → Implementer
+- Suporte: Reviewer, Documentarian
 
-### Multi-module change or integration
-- Primary: Orchestrator
-- Support: Implementer, Reviewer, Validator, Documentarian
+### Mudança ou integração multi-módulo
+- Principal: Orchestrator
+- Suporte: Implementer, Reviewer, Validator, Documentarian
 
-### Legacy hot spot change
-- Primary: Orchestrator
-- Support: Implementer, Reviewer, Documentarian
-- Often requires Reverse depth artifacts
+### Mudança em ponto crítico legado
+- Principal: Orchestrator
+- Suporte: Implementer, Reviewer, Documentarian
+- Frequentemente requer artefatos de profundidade Reverse
 
-### Release or rollout decision
-- Primary: Validator
-- Support: Reviewer, Documentarian
+### Decisão de lançamento ou rollout
+- Principal: Validator
+- Suporte: Reviewer, Documentarian
 
 ---
 
-## Final rule
+## Regra final
 
-If one person or one AI system is playing multiple roles, it must still preserve the separation of responsibilities.
+Se uma pessoa ou um sistema de AI está desempenhando múltiplos papéis, ainda assim deve preservar a separação de responsabilidades.
 
-Planning, implementation, review, validation, and documentation are distinct functions even when performed by the same actor.
+Planejamento, implementação, revisão, validação e documentação são funções distintas, mesmo quando realizadas pelo mesmo ator.

@@ -1,15 +1,15 @@
-# AS-IS Template
+# Template AS-IS
 
-## Scope
+## Escopo
 
-## Current behavior summary
+## Resumo do comportamento atual
 
-## Architectural shape
+## Forma arquitetural
 
-## Data and integration map
+## Mapa de dados e integrações
 
-## Operational pain points
+## Pontos de dor operacionais
 
-## Known constraints
+## Restrições conhecidas
 
-## Evidence (code/docs/observations)
+## Evidências (código/docs/observações)

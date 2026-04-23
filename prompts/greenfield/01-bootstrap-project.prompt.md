@@ -1,34 +1,34 @@
-# 01 - Bootstrap Project
+# 01 - Inicializar Projeto
 
-## Purpose
+## Propósito
 
-Initialize a new project with clear constraints, delivery goals, and governance baseline.
+Inicializar um novo projeto com restrições claras, objetivos de entrega e linha de base de governança.
 
-## When to use
+## Quando usar
 
-At the very beginning of a greenfield initiative.
+No início absoluto de uma iniciativa greenfield.
 
-## Required inputs
+## Entradas necessárias
 
-- Business objective
-- Non-functional constraints
-- Team size and skills
-- Target release horizon
+- Objetivo de negócio
+- Restrições não funcionais
+- Tamanho e habilidades do time
+- Horizonte de release alvo
 
-## Instructions to the AI
+## Instruções para o AI
 
-1. Summarize goals and constraints.
-2. Identify critical assumptions and unknowns.
-3. Propose initial delivery boundaries.
-4. Recommend starting task depth and first artifacts.
-5. Suggest immediate risks and mitigation actions.
+1. Resumir objetivos e restrições.
+2. Identificar premissas críticas e incógnitas.
+3. Propor limites iniciais de entrega.
+4. Recomendar profundidade inicial da tarefa e primeiros artefatos.
+5. Sugerir riscos imediatos e ações de mitigação.
 
-## Expected outputs
+## Saídas esperadas
 
-- Bootstrap brief
-- Initial risk list
-- Recommended AEHF artifacts and next prompts
+- Relatório de inicialização
+- Lista de riscos inicial
+- Artefatos AEHF recomendados e próximos prompts
 
-## Completion criteria
+## Critérios de conclusão
 
-Project direction is explicit, bounded, and ready for architecture definition.
+A direção do projeto é explícita, delimitada e pronta para definição de arquitetura.

@@ -1,84 +1,84 @@
-# AEHF Philosophy
+# Filosofia AEHF
 
-## Minimum stable structure + depth on demand
+## Estrutura mínima estável + profundidade sob demanda
 
-AEHF is built on a simple conviction:
-software delivery with AI needs structure, but not the wrong amount of structure.
+O AEHF é construído sobre uma convicção simples:
+a entrega de software com AI precisa de estrutura, mas não da quantidade errada de estrutura.
 
-The framework intentionally avoids two harmful extremes:
+O framework evita intencionalmente dois extremos prejudiciais:
 
-1. **no structure** — high entropy, weak memory, low repeatability
-2. **maximal process** — high friction, low adoption, slow delivery
+1. **sem estrutura** — alta entropia, memória fraca, baixa repetibilidade
+2. **processo máximo** — alto atrito, baixa adoção, entrega lenta
 
-The AEHF approach is to maintain a small stable core and scale rigor proportionally to the reality of the task.
-
----
-
-## What this means in practice
-
-### Start with the minimum stable core
-Every project should have enough structure to remain understandable and governable.
-At minimum, that means:
-- durable project memory
-- explicit task depth selection
-- reusable execution patterns
-- lightweight governance
-- a habit of keeping docs and code aligned
-
-### Add depth only when reality requires it
-Do not force heavyweight specs or process for every change.
-Increase rigor when:
-- risk is higher
-- scope is broader
-- contracts may change
-- legacy behavior is unclear
-- validation burden is heavier
-
-### Keep memory durable
-Do not rely on repeated prompt explanations or transient human context.
-Use the repository itself to preserve understanding over time.
-
-### Keep change incremental
-Prefer small, reviewable progress over broad reinvention.
-AEHF favors controlled evolution over dramatic reset.
-
-### Keep uncertainty honest
-The framework assumes that ambiguity exists.
-Its role is not to pretend uncertainty away, but to contain it through structure, visibility, and validation.
+A abordagem do AEHF é manter um núcleo estável pequeno e escalar o rigor proporcionalmente à realidade da tarefa.
 
 ---
 
-## The philosophy behind the layers
+## O que isso significa na prática
 
-AEHF layers are not arbitrary categories.
-They reflect recurring failure points in AI-assisted software delivery:
+### Comece com o núcleo mínimo estável
+Todo projeto deve ter estrutura suficiente para permanecer compreensível e governável.
+No mínimo, isso significa:
+- memória de projeto durável
+- seleção explícita de profundidade de tarefa
+- padrões de execução reutilizáveis
+- governança leve
+- o hábito de manter docs e código alinhados
 
-- work fails when specs are mismatched to risk
-- work fails when project memory is weak
-- work fails when execution is not routed correctly
-- work fails when governance is absent or excessive
-- work fails when the system cannot evolve without starting over
+### Adicione profundidade somente quando a realidade exigir
+Não force specs ou processos pesados para toda mudança.
+Aumente o rigor quando:
+- o risco for maior
+- o escopo for mais amplo
+- os contratos puderem mudar
+- o comportamento legado for obscuro
+- o esforço de validação for maior
 
-The framework exists to stabilize these failure points.
+### Mantenha a memória durável
+Não dependa de explicações repetidas em prompts ou de contexto humano transitório.
+Use o próprio repositório para preservar o entendimento ao longo do tempo.
+
+### Mantenha as mudanças incrementais
+Prefira progresso pequeno e revisável a grande reinvenção.
+O AEHF favorece a evolução controlada em vez do reinício dramático.
+
+### Mantenha a incerteza honesta
+O framework parte do princípio de que a ambiguidade existe.
+Seu papel não é fingir que a incerteza não existe, mas contê-la por meio de estrutura, visibilidade e validação.
 
 ---
 
-## Design posture
+## A filosofia por trás das camadas
 
-AEHF prefers:
-- clarity over novelty
-- proportional process over blanket ritual
-- explicit assumptions over hidden guesses
-- touch-and-raise over speculative rewrite
-- repository memory over repeated context dumping
-- governed progress over fast ambiguity
+As camadas do AEHF não são categorias arbitrárias.
+Elas refletem pontos de falha recorrentes na entrega de software assistida por AI:
+
+- o trabalho falha quando as specs não correspondem ao risco
+- o trabalho falha quando a memória do projeto é fraca
+- o trabalho falha quando a execução não é roteada corretamente
+- o trabalho falha quando a governança está ausente ou é excessiva
+- o trabalho falha quando o sistema não consegue evoluir sem recomeçar do zero
+
+O framework existe para estabilizar esses pontos de falha.
 
 ---
 
-## Final principle
+## Postura de design
 
-AEHF is not trying to maximize process.
-It is trying to maximize reliable progress.
+O AEHF prefere:
+- clareza a novidade
+- processo proporcional a ritual indiscriminado
+- suposições explícitas a suposições ocultas
+- touch-and-raise a reescrita especulativa
+- memória do repositório a despejo repetido de contexto
+- progresso governado a ambiguidade veloz
 
-The goal is not to make AI feel powerful.
-The goal is to make AI-assisted delivery stay useful over time.
+---
+
+## Princípio final
+
+O AEHF não está tentando maximizar o processo.
+Está tentando maximizar o progresso confiável.
+
+O objetivo não é fazer a AI parecer poderosa.
+O objetivo é fazer a entrega assistida por AI permanecer útil ao longo do tempo.

@@ -1,17 +1,17 @@
-# Generic Adapter
+# Adapter Genérico
 
-This adapter defines how to apply AEHF when no dedicated tool integration exists.
+Este adapter define como aplicar o AEHF quando não existe integração dedicada com nenhuma ferramenta.
 
-## Generic usage pattern
+## Padrão de uso genérico
 
-1. Load constitution and standards.
-2. Classify task depth.
-3. Use spec templates to package change intent.
-4. Use prompts as structured execution guides.
-5. Validate and synchronize durable memory.
+1. Carregar a constituição e os padrões.
+2. Classificar a profundidade da tarefa.
+3. Usar os templates de spec para empacotar a intenção de mudança.
+4. Usar prompts como guias estruturados de execução.
+5. Validar e sincronizar a memória durável.
 
-## Portability rules
+## Regras de portabilidade
 
-- Do not hard-code platform-specific assumptions.
-- Keep artifacts plain Markdown and repository-native.
-- Preserve separation between method and tool delivery.
+- Não fixar suposições específicas de plataforma.
+- Manter artefatos em Markdown simples e nativos do repositório.
+- Preservar a separação entre o método e a entrega pela ferramenta.

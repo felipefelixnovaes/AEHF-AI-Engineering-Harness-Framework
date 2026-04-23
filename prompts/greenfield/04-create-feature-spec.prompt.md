@@ -1,31 +1,31 @@
-# 04 - Create Feature Spec
+# 04 - Criar Spec de Funcionalidade
 
-## Purpose
+## Propósito
 
-Generate a depth-appropriate feature specification before implementation.
+Gerar uma especificação de funcionalidade adequada à profundidade antes da implementação.
 
-## When to use
+## Quando usar
 
-Before coding a new feature or significant enhancement.
+Antes de codificar uma nova funcionalidade ou melhoria significativa.
 
-## Required inputs
+## Entradas necessárias
 
-- Feature request
-- Domain context
-- Constraints and acceptance criteria
+- Solicitação de funcionalidade
+- Contexto de domínio
+- Restrições e critérios de aceitação
 
-## Instructions to the AI
+## Instruções para o AI
 
-1. Classify task depth (Fast/Standard/Deep).
-2. Produce spec skeleton using matching template.
-3. Define scope boundaries and assumptions.
-4. Add validation and documentation update requirements.
+1. Classificar a profundidade da tarefa (Fast/Standard/Deep).
+2. Produzir esqueleto de spec usando o template correspondente.
+3. Definir limites de escopo e premissas.
+4. Adicionar requisitos de validação e atualização de documentação.
 
-## Expected outputs
+## Saídas esperadas
 
-- Feature spec draft
-- Task list and validation outline
+- Rascunho de spec de funcionalidade
+- Lista de tarefas e esboço de validação
 
-## Completion criteria
+## Critérios de conclusão
 
-Spec is precise, testable, and ready for implementer handoff.
+O spec é preciso, testável e pronto para handoff ao implementador.

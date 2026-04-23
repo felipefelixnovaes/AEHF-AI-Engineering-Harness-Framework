@@ -1,27 +1,27 @@
-# ADR-XXXX: <Decision Title>
+# ADR-XXXX: <Título da Decisão>
 
-- **Status:** Proposed | Accepted | Superseded
-- **Date:** YYYY-MM-DD
-- **Owners:**
+- **Status:** Proposto | Aceito | Substituído
+- **Data:** AAAA-MM-DD
+- **Responsáveis:**
 
-## Context
+## Contexto
 
-Describe the problem, constraints, and why a decision is needed now.
+Descreva o problema, as restrições e por que uma decisão é necessária agora.
 
-## Decision
+## Decisão
 
-Describe the chosen option.
+Descreva a opção escolhida.
 
-## Alternatives considered
+## Alternativas consideradas
 
-List plausible alternatives and why they were not selected.
+Liste alternativas plausíveis e por que não foram selecionadas.
 
-## Consequences
+## Consequências
 
-- Positive
-- Negative
-- Follow-up actions
+- Positivas
+- Negativas
+- Ações de acompanhamento
 
-## Validation and rollback
+## Validação e rollback
 
-How success will be measured and how to revert if needed.
+Como o sucesso será medido e como reverter se necessário.

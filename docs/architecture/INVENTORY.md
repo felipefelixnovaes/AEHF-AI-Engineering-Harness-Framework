@@ -1,32 +1,32 @@
-# AEHF Inventory
+# Inventário AEHF
 
-This file is the factual inventory of the AEHF repository.
-It describes the framework's main layers, artifacts, adapters, workflows, and extension points.
+Este arquivo é o inventário factual do repositório AEHF.
+Descreve as principais camadas, artefatos, adapters, workflows e pontos de extensão do framework.
 
-Its purpose is to help contributors and AI tools understand what exists, what each part is for, and how the pieces fit together.
+Seu objetivo é ajudar colaboradores e ferramentas de AI a entender o que existe, para que serve cada parte e como as peças se encaixam.
 
 ---
 
-## 1. Framework layers
+## 1. Camadas do framework
 
-AEHF is organized around five core layers.
+O AEHF é organizado em torno de cinco camadas centrais.
 
-### 1. Adaptive Specs Layer
-**Purpose:** Match process depth to task depth.
+### 1. Camada de Specs Adaptativas
+**Objetivo:** Alinhar a profundidade do processo à profundidade da tarefa.
 
-Primary artifacts:
+Artefatos principais:
 - `docs/standards/TASK_DEPTH_POLICY.md`
 - `specs/templates/*.template.md`
-- `specs/` feature-level change packages
+- pacotes de mudança de nível de funcionalidade em `specs/`
 
-Core responsibility:
-- prevent over-process for simple work
-- prevent under-structuring for risky work
+Responsabilidade central:
+- evitar excesso de processo para trabalhos simples
+- evitar falta de estrutura para trabalhos arriscados
 
-### 2. Project Memory Layer
-**Purpose:** Preserve durable operational understanding.
+### 2. Camada de Memória do Projeto
+**Objetivo:** Preservar o entendimento operacional durável.
 
-Primary artifacts:
+Artefatos principais:
 - `docs/architecture/`
 - `docs/domains/`
 - `docs/decisions/`
@@ -34,108 +34,108 @@ Primary artifacts:
 - `docs/lessons/`
 - `CHANGELOG.md`
 
-Core responsibility:
-- reduce repeated context dumping
-- preserve architectural and domain understanding
-- keep repository knowledge durable across sessions and contributors
+Responsabilidade central:
+- reduzir o despejo repetido de contexto
+- preservar o entendimento de arquitetura e domínio
+- manter o conhecimento do repositório durável entre sessões e colaboradores
 
-### 3. Execution Harness Layer
-**Purpose:** Structure how AI-assisted work is executed.
+### 3. Camada do Execution Harness
+**Objetivo:** Estruturar como o trabalho assistido por AI é executado.
 
-Primary artifacts:
+Artefatos principais:
 - `prompts/`
 - `AGENTS.md`
 - `CLAUDE.md`
 - `.github/copilot-instructions.md`
 - `.github/instructions/`
-- workflow docs and examples
+- documentos de workflow e exemplos
 
-Core responsibility:
-- route work correctly
-- reduce ambiguity
-- align tool behavior with repository method
+Responsabilidade central:
+- rotear o trabalho corretamente
+- reduzir a ambiguidade
+- alinhar o comportamento das ferramentas ao método do repositório
 
-### 4. Governance Layer
-**Purpose:** Keep delivery controlled without becoming bureaucratic.
+### 4. Camada de Governança
+**Objetivo:** Manter a entrega controlada sem se tornar burocrática.
 
-Primary artifacts:
+Artefatos principais:
 - `docs/constitution/CONSTITUTION.md`
 - `docs/decisions/ADR_TEMPLATE.md`
 - `docs/runbooks/RELEASE_CHECKLIST.md`
 - `docs/standards/DOC_UPDATE_POLICY.md`
 - `CHANGELOG.md`
-- governance prompts under `prompts/governance/`
+- prompts de governança em `prompts/governance/`
 
-Core responsibility:
-- preserve traceability
-- surface risk
-- maintain reviewability and change history
+Responsabilidade central:
+- preservar a rastreabilidade
+- evidenciar o risco
+- manter a revisabilidade e o histórico de mudanças
 
-### 5. Evolution Layer
-**Purpose:** Allow the framework to grow without breaking the core method.
+### 5. Camada de Evolução
+**Objetivo:** Permitir que o framework cresça sem quebrar o método central.
 
-Primary artifacts:
+Artefatos principais:
 - `adapters/`
 - `examples/`
-- roadmap content in `README.md`
-- future extension points documented here and elsewhere
+- conteúdo de roadmap em `README.md`
+- pontos de extensão futuros documentados aqui e em outros lugares
 
-Core responsibility:
-- support new tools and delivery modes
-- keep the method portable
-- avoid lock-in to one ecosystem
+Responsabilidade central:
+- suportar novas ferramentas e modos de entrega
+- manter o método portável
+- evitar lock-in em um único ecossistema
 
 ---
 
-## 2. Repository modules and responsibilities
+## 2. Módulos e responsabilidades do repositório
 
-### Top-level files
+### Arquivos de nível superior
 
-- `README.md` — launch document and primary framework entry point
-- `CLAUDE.md` — Claude-style adapter entry point and operating contract
-- `AGENTS.md` — role separation and execution routing model
-- `CHANGELOG.md` — visible history of framework evolution
-- `CONTRIBUTING.md` — contribution expectations and quality bar
-- `LICENSE` — repository license
+- `README.md` — documento de entrada e ponto de acesso principal ao framework
+- `CLAUDE.md` — ponto de entrada do adapter estilo Claude e contrato de operação
+- `AGENTS.md` — modelo de separação de papéis e roteamento de execução
+- `CHANGELOG.md` — histórico visível da evolução do framework
+- `CONTRIBUTING.md` — expectativas de contribuição e barra de qualidade
+- `LICENSE` — licença do repositório
 
 ### `docs/`
-Durable operational memory and source of truth.
+Memória operacional durável e fonte de verdade.
 
-Subareas include:
-- `overview/` — framework explanation and adoption framing
-- `constitution/` — non-negotiable principles
-- `architecture/` — system model of the framework itself
-- `domains/` — domain-level structures and templates
-- `decisions/` — ADRs and decision records
-- `as-is/` — current-state models for reverse or legacy contexts
-- `to-be/` — desired target-state models
-- `gaps/` — backlog of gaps, discrepancies, and risk items
-- `standards/` — coding, documentation, and delivery rules
-- `lessons/` — reusable learning and heuristics
-- `runbooks/` — operational checklists and procedures
+Subáreas incluem:
+- `overview/` — explicação do framework e enquadramento de adoção
+- `constitution/` — princípios inegociáveis
+- `architecture/` — modelo do sistema do próprio framework
+- `domains/` — estruturas e templates de nível de domínio
+- `decisions/` — ADRs e registros de decisão
+- `as-is/` — modelos do estado atual para contextos reverse ou legados
+- `to-be/` — modelos do estado-alvo desejado
+- `gaps/` — backlog de lacunas, discrepâncias e itens de risco
+- `standards/` — regras de codificação, documentação e entrega
+- `lessons/` — aprendizados reutilizáveis e heurísticas
+- `runbooks/` — checklists e procedimentos operacionais
 
 ### `specs/`
-Change packages and templates.
+Pacotes de mudança e templates.
 
-Purpose:
-- capture intent
-- plan execution
-- structure validation
-- improve reviewability
+Objetivo:
+- capturar a intenção
+- planejar a execução
+- estruturar a validação
+- melhorar a revisabilidade
 
-Subareas include:
-- `templates/` — reusable spec templates by depth or artifact type
-- feature folders — per-change packages containing `spec.md`, `plan.md`, `tasks.md`, `review.md`, and `validate.md` when appropriate
+Subáreas incluem:
+- `templates/` — templates de spec reutilizáveis por profundidade ou tipo de artefato
+- pastas de funcionalidade — pacotes de mudança individuais contendo `spec.md`, `plan.md`, `tasks.md`, `review.md` e `validate.md` quando apropriado
 
 ### `prompts/`
-Reusable operational prompt library.
+Biblioteca operacional de prompts reutilizáveis.
 
-Purpose:
-- provide repeatable workflows
-- reduce prompt ambiguity
-- support greenfield, brownfield, reverse, maintenance, and governance modes
+Objetivo:
+- fornecer workflows repetíveis
+- reduzir a ambiguidade nos prompts
+- suportar modos greenfield, brownfield, reverse, manutenção e governança
 
-Subareas include:
+Subáreas incluem:
 - `greenfield/`
 - `brownfield/`
 - `reverse/`
@@ -143,145 +143,145 @@ Subareas include:
 - `governance/`
 
 ### `adapters/`
-Tool-specific context delivery guidance.
+Orientações de entrega de contexto específicas por ferramenta.
 
-Current modules:
+Módulos atuais:
 - `adapters/claude/`
 - `adapters/copilot/`
 - `adapters/generic/`
 
-Purpose:
-- adapt the AEHF method to different AI tool ecosystems
-- keep the method universal while varying context delivery
+Objetivo:
+- adaptar o método AEHF para diferentes ecossistemas de ferramentas de AI
+- manter o método universal enquanto varia a entrega de contexto
 
 ### `examples/`
-Scenario-driven adoption starters.
+Pontos de entrada de adoção orientados a cenários.
 
-Current scenarios:
+Cenários atuais:
 - `greenfield-saas/`
 - `legacy-modernization/`
 - `enterprise-monorepo/`
 
-Purpose:
-- show how the framework applies in different repository realities
-- reduce abstraction by giving concrete entry points
+Objetivo:
+- mostrar como o framework se aplica em diferentes realidades de repositório
+- reduzir a abstração oferecendo pontos de entrada concretos
 
 ### `.github/`
-GitHub-specific collaboration and Copilot integration area.
+Área de colaboração específica do GitHub e integração com Copilot.
 
-Includes:
-- global Copilot instructions
-- scoped instructions by area
-- issue templates
-- PR template
+Inclui:
+- instruções globais do Copilot
+- instruções com escopo por área
+- templates de issue
+- template de PR
 
-Purpose:
-- improve contributor workflow
-- align Copilot behavior with AEHF
-- increase consistency in repository operations
-
----
-
-## 3. Adapter entry points
-
-Current adapter entry points are:
-
-- Claude-style environments: `CLAUDE.md`
-- GitHub Copilot environments: `.github/copilot-instructions.md`
-- Generic tool alignment: `adapters/generic/README.md`
-
-These adapters are delivery mechanisms, not alternate methods.
-They should preserve the same AEHF principles while changing how context is consumed.
+Objetivo:
+- melhorar o workflow dos colaboradores
+- alinhar o comportamento do Copilot ao AEHF
+- aumentar a consistência nas operações do repositório
 
 ---
 
-## 4. Current workflow families
+## 3. Pontos de entrada dos adapters
 
-AEHF currently supports the following workflow families:
+Os pontos de entrada atuais dos adapters são:
+
+- Ambientes estilo Claude: `CLAUDE.md`
+- Ambientes GitHub Copilot: `.github/copilot-instructions.md`
+- Alinhamento de ferramentas genéricas: `adapters/generic/README.md`
+
+Esses adapters são mecanismos de entrega, não métodos alternativos.
+Devem preservar os mesmos princípios AEHF enquanto mudam como o contexto é consumido.
+
+---
+
+## 4. Famílias de workflow atuais
+
+O AEHF atualmente suporta as seguintes famílias de workflow:
 
 ### Greenfield
-Used for new project or new subsystem setup.
+Usado para configuração de novo projeto ou novo subsistema.
 
-Typical flow:
-- bootstrap intent
-- define architecture baseline
-- map domains
-- create feature specs
-- implement with governance
+Fluxo típico:
+- inicializar a intenção
+- definir a linha de base de arquitetura
+- mapear domínios
+- criar specs de funcionalidade
+- implementar com governança
 
 ### Brownfield
-Used for existing repositories that need structure and stabilization.
+Usado para repositórios existentes que precisam de estrutura e estabilização.
 
-Typical flow:
-- analyze repository
-- create inventory
-- extract domains
-- detect hotspots
-- identify implicit standards
+Fluxo típico:
+- analisar o repositório
+- criar inventário
+- extrair domínios
+- detectar pontos críticos
+- identificar padrões implícitos
 
 ### Reverse
-Used when current behavior must be reconstructed before safe change.
+Usado quando o comportamento atual deve ser reconstruído antes de uma mudança segura.
 
-Typical flow:
-- build as-is model
-- identify discrepancies
-- map gap backlog
-- plan touch-and-raise path
+Fluxo típico:
+- construir o modelo as-is
+- identificar discrepâncias
+- mapear o backlog de lacunas
+- planejar o caminho touch-and-raise
 
-### Maintenance
-Used for continuous improvement and drift control.
+### Manutenção
+Usado para melhoria contínua e controle de deriva.
 
-Typical flow:
-- update docs after change
-- generate ADRs when needed
-- review technical debt
-- sync specs, code, and docs
-- extract lessons
+Fluxo típico:
+- atualizar docs após mudança
+- gerar ADRs quando necessário
+- revisar dívida técnica
+- sincronizar specs, código e docs
+- extrair lições
 
-### Governance
-Used for operating the method itself.
+### Governança
+Usado para operar o próprio método.
 
-Typical flow:
-- classify task depth
-- assess risk
-- choose model or workflow level
-- decide human handoff
-- assess release readiness
-
----
-
-## 5. Known repository assumptions
-
-This repository currently assumes:
-- Markdown-first framework assets
-- portability across Git-based repository platforms
-- adapters as the primary mechanism for tool-specific integration
-- no mandatory CLI or SaaS backend for core adoption
-
-These assumptions may evolve, but the framework should remain useful in repository-only form.
+Fluxo típico:
+- classificar a profundidade da tarefa
+- avaliar o risco
+- escolher o nível de modelo ou workflow
+- decidir a transferência para humano
+- avaliar a prontidão para release
 
 ---
 
-## 6. Extension points
+## 5. Suposições conhecidas do repositório
 
-Planned extension points include:
-- additional adapters for more AI tooling ecosystems
-- optional CLI scaffolding
-- optional IDE extension support
-- optional runtime orchestration patterns
-- optional hosted memory or telemetry services
-- optional enterprise governance packs
+Este repositório atualmente assume:
+- ativos do framework baseados em Markdown
+- portabilidade entre plataformas de repositório baseadas em Git
+- adapters como mecanismo principal para integração específica por ferramenta
+- nenhum CLI ou backend SaaS obrigatório para adoção central
 
-All extension points must preserve:
-- repository portability
-- adapter separation
-- method stability
-- lightweight core adoption
+Essas suposições podem evoluir, mas o framework deve permanecer útil apenas com o repositório.
 
 ---
 
-## Final note
+## 6. Pontos de extensão
 
-This inventory should remain factual.
-It is not a roadmap pitch.
-When the repository structure, responsibilities, or extension points change, update this file so it continues to reflect reality.
+Os pontos de extensão planejados incluem:
+- adapters adicionais para mais ecossistemas de ferramentas de AI
+- scaffolding de CLI opcional
+- suporte opcional a extensões de IDE
+- padrões opcionais de orquestração em runtime
+- serviços opcionais de memória hospedada ou telemetria
+- pacotes opcionais de governança empresarial
+
+Todos os pontos de extensão devem preservar:
+- portabilidade do repositório
+- separação de adapters
+- estabilidade do método
+- adoção central leve
+
+---
+
+## Nota final
+
+Este inventário deve permanecer factual.
+Não é um pitch de roadmap.
+Quando a estrutura, as responsabilidades ou os pontos de extensão do repositório mudarem, atualize este arquivo para que continue refletindo a realidade.

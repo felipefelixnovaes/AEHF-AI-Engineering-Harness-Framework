@@ -1,129 +1,129 @@
-# Touch-and-Raise Pattern
+# Padrão Touch-and-Raise
 
-Use this pattern for legacy, brownfield, or partially understood systems.
+Use este padrão para sistemas legados, brownfield ou parcialmente compreendidos.
 
-Its purpose is to improve the quality of a touched area without triggering unjustified redesign or destabilizing broad rewrite.
-
----
-
-## Definition
-
-When touching a component, raise its quality in place while preserving the smallest safe scope.
-
-This means:
-- fix what must be fixed
-- improve what directly reduces current risk
-- document what is discovered
-- defer broader redesign into explicit follow-up work
-
-Touch-and-raise is the default modernization posture when full rewrite is not clearly justified.
+Seu objetivo é melhorar a qualidade de uma área tocada sem desencadear um redesign injustificado ou desestabilizar uma reescrita ampla.
 
 ---
 
-## When to use it
+## Definição
 
-Use this pattern when:
-- working in legacy code
-- touching a hot spot with weak structure
-- changing partially understood systems
-- making bounded modernization progress
-- reducing risk incrementally over time
+Ao tocar um componente, eleve sua qualidade no lugar, preservando o menor escopo seguro possível.
 
-It is especially useful when current delivery must continue while quality improves gradually.
+Isso significa:
+- corrigir o que deve ser corrigido
+- melhorar o que diretamente reduz o risco atual
+- documentar o que é descoberto
+- adiar o redesign mais amplo para trabalho de acompanhamento explícito
 
----
-
-## Goals
-
-The pattern exists to:
-- preserve delivery continuity
-- reduce immediate local risk
-- avoid speculative large rewrites
-- make each touched area slightly easier to understand and maintain
-- turn discovered knowledge into durable repository memory
+Touch-and-raise é a postura padrão de modernização quando uma reescrita completa não está claramente justificada.
 
 ---
 
-## Core rules
+## Quando usar
 
-### 1. Keep scope local
-Keep the active change focused on the touched area and its direct dependencies.
-Do not expand into adjacent cleanup unless it directly supports the current change.
+Use este padrão quando:
+- trabalhar em código legado
+- tocar um ponto crítico com estrutura fraca
+- alterar sistemas parcialmente compreendidos
+- fazer progresso delimitado de modernização
+- reduzir risco de forma incremental ao longo do tempo
 
-### 2. Preserve observable behavior by default
-If behavior is being changed intentionally, document that change explicitly.
-Do not disguise behavior change as cleanup or refactor.
-
-### 3. Improve what reduces immediate risk
-Good touch-and-raise improvements include:
-- clearer naming
-- smaller functions or clearer structure
-- safer boundaries
-- better validation or tests
-- removal of obvious duplication in the touched area
-- clearer operational notes or domain documentation
-
-### 4. Record hidden knowledge
-If you discover implicit contracts, assumptions, workarounds, odd constraints, or discrepancies, record them in the appropriate repository memory.
-
-### 5. Defer broad redesign explicitly
-If the touched area reveals a larger structural problem, create a follow-up backlog item, gap entry, ADR candidate, or future spec.
-Do not smuggle redesign into a local change without alignment.
+É especialmente útil quando a entrega atual deve continuar enquanto a qualidade melhora gradualmente.
 
 ---
 
-## Typical execution flow
+## Objetivos
 
-1. identify the smallest safe scope
-2. understand current observable behavior
-3. make the required change
-4. improve the touched area where it directly reduces risk
-5. add or strengthen validation around touched behavior
-6. document newly discovered contracts, risks, or constraints
-7. defer larger redesign into explicit follow-up work
-
----
-
-## What “raise” usually means
-
-Raising quality does not mean beautifying everything.
-It usually means one or more of the following:
-
-- code is easier to read than before
-- local structure is less fragile than before
-- behavior is better protected by tests or validation
-- documentation is more accurate than before
-- risk is more visible than before
-- hidden contracts are more explicit than before
-
-If none of these improved, the “raise” part likely did not happen.
+O padrão existe para:
+- preservar a continuidade da entrega
+- reduzir o risco local imediato
+- evitar grandes reescritas especulativas
+- tornar cada área tocada ligeiramente mais fácil de entender e manter
+- transformar o conhecimento descoberto em memória durável do repositório
 
 ---
 
-## Anti-patterns
+## Regras fundamentais
 
-Avoid:
+### 1. Mantenha o escopo local
+Mantenha a mudança ativa focada na área tocada e suas dependências diretas.
+Não expanda para limpeza adjacente a menos que suporte diretamente a mudança atual.
 
-- full subsystem rewrite without evidence and alignment
-- broad “cleanup” unrelated to the functional change
-- mixing architectural redesign into a local bug fix without explicit justification
-- undocumented behavior changes disguised as refactor
-- touching many unrelated files for aesthetic consistency only
-- assuming the touched area is fully understood because one change succeeded
+### 2. Preserve o comportamento observável por padrão
+Se o comportamento estiver sendo alterado intencionalmente, documente essa mudança explicitamente.
+Não disfarce mudanças de comportamento como limpeza ou refatoração.
+
+### 3. Melhore o que reduz o risco imediato
+Boas melhorias de touch-and-raise incluem:
+- nomenclatura mais clara
+- funções menores ou estrutura mais clara
+- limites mais seguros
+- melhor validação ou testes
+- remoção de duplicação óbvia na área tocada
+- notas operacionais ou documentação de domínio mais claras
+
+### 4. Registre o conhecimento oculto
+Se você descobrir contratos implícitos, premissas, workarounds, restrições incomuns ou discrepâncias, registre-os na memória apropriada do repositório.
+
+### 5. Adie o redesign amplo explicitamente
+Se a área tocada revelar um problema estrutural maior, crie um item de backlog de acompanhamento, uma entrada de lacuna, um candidato a ADR ou um spec futuro.
+Não contrabandear redesign em uma mudança local sem alinhamento.
 
 ---
 
-## Relationship to task depth
+## Fluxo de execução típico
 
-Touch-and-raise is often used with:
-- **Fast** for tiny safe local improvements
-- **Standard** for bounded modernization
-- **Reverse** when current behavior must be reconstructed first
-
-It is compatible with **Deep**, but Deep work may require broader planning, stronger validation, and explicit architecture decisions.
+1. identificar o menor escopo seguro
+2. entender o comportamento observável atual
+3. fazer a mudança necessária
+4. melhorar a área tocada onde isso reduz diretamente o risco
+5. adicionar ou fortalecer a validação em torno do comportamento tocado
+6. documentar contratos, riscos ou restrições recém-descobertos
+7. adiar o redesign maior para trabalho de acompanhamento explícito
 
 ---
 
-## Final rule
+## O que "raise" normalmente significa
 
-Leave the touched area measurably better than you found it, but do so without turning a necessary change into uncontrolled redesign.
+Elevar a qualidade não significa embelezar tudo.
+Normalmente significa uma ou mais das seguintes:
+
+- o código é mais fácil de ler do que antes
+- a estrutura local é menos frágil do que antes
+- o comportamento é melhor protegido por testes ou validação
+- a documentação é mais precisa do que antes
+- o risco é mais visível do que antes
+- os contratos ocultos são mais explícitos do que antes
+
+Se nenhum desses aspectos melhorou, a parte de "raise" provavelmente não aconteceu.
+
+---
+
+## Anti-padrões
+
+Evite:
+
+- reescrita completa de subsistema sem evidências e alinhamento
+- "limpeza" ampla não relacionada à mudança funcional
+- misturar redesign arquitetural em uma correção de bug local sem justificativa explícita
+- mudanças de comportamento não documentadas disfarçadas de refatoração
+- tocar muitos arquivos não relacionados apenas por consistência estética
+- assumir que a área tocada é totalmente compreendida porque uma mudança foi bem-sucedida
+
+---
+
+## Relação com a profundidade de tarefa
+
+Touch-and-raise é frequentemente usado com:
+- **Fast** para pequenas melhorias locais seguras
+- **Standard** para modernização delimitada
+- **Reverse** quando o comportamento atual deve ser reconstruído primeiro
+
+É compatível com **Deep**, mas o trabalho Deep pode exigir planejamento mais amplo, validação mais rigorosa e decisões explícitas de arquitetura.
+
+---
+
+## Regra final
+
+Deixe a área tocada mensuravelmente melhor do que você a encontrou, mas faça isso sem transformar uma mudança necessária em um redesign descontrolado.

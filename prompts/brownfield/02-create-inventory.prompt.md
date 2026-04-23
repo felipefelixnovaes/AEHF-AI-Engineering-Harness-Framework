@@ -1,32 +1,32 @@
-# 02 - Create Inventory
+# 02 - Criar Inventário
 
-## Purpose
+## Propósito
 
-Create a current-state inventory of components, dependencies, and critical flows.
+Criar um inventário do estado atual de componentes, dependências e fluxos críticos.
 
-## When to use
+## Quando usar
 
-After initial repository analysis.
+Após a análise inicial do repositório.
 
-## Required inputs
+## Entradas necessárias
 
-- Module list
-- Runtime/dependency data
-- Existing architecture docs (if any)
+- Lista de módulos
+- Dados de runtime/dependências
+- docs de arquitetura existentes (se houver)
 
-## Instructions to the AI
+## Instruções para o AI
 
-1. Map components and ownership assumptions.
-2. Identify dependency hotspots and fragile integrations.
-3. Record evidence and confidence level per inventory item.
-4. Produce inventory output aligned with `docs/architecture/INVENTORY.md` style.
+1. Mapear componentes e premissas de propriedade.
+2. Identificar hotspots de dependência e integrações frágeis.
+3. Registrar evidências e nível de confiança por item do inventário.
+4. Produzir saída de inventário alinhada ao estilo de `docs/architecture/INVENTORY.md`.
 
-## Expected outputs
+## Saídas esperadas
 
-- Structured inventory
-- Confidence tags
-- Follow-up investigation items
+- Inventário estruturado
+- Etiquetas de confiança
+- Itens de investigação subsequentes
 
-## Completion criteria
+## Critérios de conclusão
 
-Inventory is actionable for domain extraction and risk planning.
+O inventário é acionável para extração de domínios e planejamento de riscos.

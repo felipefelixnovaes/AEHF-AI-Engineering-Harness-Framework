@@ -1,132 +1,132 @@
-# Copilot Repository Instructions (AEHF)
+# Instruções do Repositório Copilot (AEHF)
 
-This repository follows AEHF.
-These instructions define how GitHub Copilot should behave when assisting in this repository.
+Este repositório segue o AEHF.
+Estas instruções definem como o GitHub Copilot deve se comportar ao assistir neste repositório.
 
-The goal is not just to generate output, but to preserve a governed delivery method across code, documentation, specs, and repository memory.
-
----
-
-## Repository operating model
-
-Treat the repository as four coordinated layers:
-
-- `docs/` is the durable source of truth
-- `specs/` is the per-change execution package
-- `prompts/` is the reusable operational prompt library
-- `docs/lessons/` is the evolutionary memory layer
-
-Do not treat documentation as secondary.
-In this repository, durable memory is part of delivery quality.
+O objetivo não é apenas gerar saída, mas preservar um método de entrega governado em código, documentação, specs e memória do repositório.
 
 ---
 
-## Mandatory behavior
+## Modelo operacional do repositório
 
-Always:
+Trate o repositório como quatro camadas coordenadas:
 
-- preserve existing behavior unless a change is intentional and documented
-- prefer incremental change over rewrite
-- classify task depth before proposing artifacts or workflow
-- use existing repository conventions before introducing new patterns
-- update docs, specs, and changelog when behavior, architecture, decisions, or standards change
-- surface assumptions explicitly
-- distinguish facts from assumptions
-- escalate to human validation when risk or ambiguity is high
+- `docs/` é a fonte durável da verdade
+- `specs/` é o pacote de execução por mudança
+- `prompts/` é a biblioteca operacional de prompts reutilizáveis
+- `docs/lessons/` é a camada de memória evolutiva
 
-Never:
-
-- rewrite broadly without justification
-- silently change external contracts
-- leave meaningful documentation drift behind
-- present uncertainty as certainty
+Não trate a documentação como secundária.
+Neste repositório, memória durável faz parte da qualidade de entrega.
 
 ---
 
-## Task depth rules
+## Comportamento obrigatório
 
-Use `docs/standards/TASK_DEPTH_POLICY.md` before deciding how much process or how many artifacts are needed.
+Sempre:
 
-Depth levels:
+- preservar o comportamento existente salvo se uma mudança for intencional e documentada
+- preferir mudança incremental em vez de reescrita
+- classificar a profundidade da tarefa antes de propor artefatos ou fluxo de trabalho
+- usar as convenções existentes do repositório antes de introduzir novos padrões
+- atualizar docs, specs e changelog quando comportamento, arquitetura, decisões ou padrões mudarem
+- tornar premissas explícitas
+- distinguir fatos de premissas
+- escalar para validação humana quando o risco ou a ambiguidade for alto
 
-- **Fast**: small, low-risk, local change
-- **Standard**: normal feature or flow change
-- **Deep**: high-risk, cross-module, migration, or contract-impacting change
-- **Reverse**: legacy or poorly documented system where current behavior must be reconstructed
+Nunca:
 
-The selected depth should influence:
-
-- planning rigor
-- artifact creation
-- review expectations
-- validation needs
-- documentation scope
-
----
-
-## Delivery rules
-
-When implementing:
-
-- check `docs/architecture/INVENTORY.md`
-- check relevant domain files under `docs/domains/`
-- check relevant decisions under `docs/decisions/`
-- check relevant open gaps under `docs/gaps/`
-- update affected sources of truth when behavior or understanding changes
-
-When touching legacy code:
-
-- prefer touch-and-raise over rewrite
-- preserve observable behavior unless intentionally changing it
-- document newly discovered behavior
-- record discrepancies and gaps when current behavior conflicts with expected behavior
-
-When updating docs:
-
-- prefer factual, durable updates over aspirational prose
-- keep code, specs, and docs aligned
-- update the smallest correct set of files, but do not omit important sources of truth
+- reescrever amplamente sem justificativa
+- alterar silenciosamente contratos externos
+- deixar desvio significativo de documentação para trás
+- apresentar incerteza como certeza
 
 ---
 
-## Adapter guidance
+## Regras de profundidade de tarefas
 
-Use these repository assets correctly:
+Use `docs/standards/TASK_DEPTH_POLICY.md` antes de decidir quanto processo ou quantos artefatos são necessários.
 
-- `.github/copilot-instructions.md` for global behavior
-- `.github/instructions/*.instructions.md` for scoped behavior by area
-- `prompts/*.prompt.md` for reusable execution workflows
-- `AGENTS.md` for role separation and handoff logic
-- `CLAUDE.md` as the Claude-specific adapter entry point, not as the global Copilot source of truth
+Níveis de profundidade:
+
+- **Fast**: mudança pequena, de baixo risco e local
+- **Standard**: mudança normal de funcionalidade ou fluxo
+- **Deep**: mudança de alto risco, entre módulos, de migração ou com impacto em contratos
+- **Reverse**: sistema legado ou mal documentado onde o comportamento atual deve ser reconstruído
+
+A profundidade selecionada deve influenciar:
+
+- rigor de planejamento
+- criação de artefatos
+- expectativas de revisão
+- necessidades de validação
+- escopo de documentação
 
 ---
 
-## Quality bar
+## Regras de entrega
 
-Favor output that is:
+Ao implementar:
 
-- clear
+- verificar `docs/architecture/INVENTORY.md`
+- verificar arquivos de domínio relevantes em `docs/domains/`
+- verificar decisões relevantes em `docs/decisions/`
+- verificar lacunas abertas relevantes em `docs/gaps/`
+- atualizar as fontes da verdade afetadas quando o comportamento ou o entendimento mudar
+
+Ao tocar código legado:
+
+- preferir touch-and-raise em vez de reescrita
+- preservar o comportamento observável salvo se estiver sendo mudado intencionalmente
+- documentar comportamento recém-descoberto
+- registrar discrepâncias e lacunas quando o comportamento atual conflitar com o esperado
+
+Ao atualizar docs:
+
+- preferir atualizações factuais e duráveis em vez de prosa aspiracional
+- manter código, specs e docs alinhados
+- atualizar o menor conjunto correto de arquivos, mas não omitir fontes importantes da verdade
+
+---
+
+## Orientação de adapters
+
+Use estes ativos do repositório corretamente:
+
+- `.github/copilot-instructions.md` para comportamento global
+- `.github/instructions/*.instructions.md` para comportamento com escopo por área
+- `prompts/*.prompt.md` para fluxos de execução reutilizáveis
+- `AGENTS.md` para separação de papéis e lógica de transição
+- `CLAUDE.md` como ponto de entrada do adapter específico de Claude, não como fonte global de verdade do Copilot
+
+---
+
+## Nível de qualidade
+
+Favoreça saída que seja:
+
+- clara
 - incremental
-- reviewable
-- standards-aligned
-- traceable to repository context
+- revisável
+- alinhada a padrões
+- rastreável ao contexto do repositório
 
-Avoid output that is:
+Evite saída que seja:
 
-- generic
-- speculative
-- overly broad
-- disconnected from repository memory
-- optimized for speed at the expense of maintainability
+- genérica
+- especulativa
+- excessivamente abrangente
+- desconectada da memória do repositório
+- otimizada para velocidade em detrimento da manutenibilidade
 
 ---
 
-## Default stance
+## Postura padrão
 
-When in doubt:
+Na dúvida:
 
-- choose the smallest reliable step
-- preserve behavior
-- make assumptions visible
-- keep project memory updated
-- prefer governed progress over fast ambiguity
+- escolha o menor passo confiável
+- preserve o comportamento
+- torne as premissas visíveis
+- mantenha a memória do projeto atualizada
+- prefira progresso governado a velocidade ambígua

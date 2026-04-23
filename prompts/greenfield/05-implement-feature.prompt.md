@@ -1,33 +1,33 @@
-# 05 - Implement Feature
+# 05 - Implementar Funcionalidade
 
-## Purpose
+## Propósito
 
-Execute feature delivery incrementally with quality and memory updates.
+Executar a entrega de funcionalidade de forma incremental com qualidade e atualizações de memória.
 
-## When to use
+## Quando usar
 
-After a feature spec is approved.
+Após um spec de funcionalidade ser aprovado.
 
-## Required inputs
+## Entradas necessárias
 
-- Approved spec package
-- Coding standards
-- Test strategy
+- Pacote de spec aprovado
+- Padrões de codificação
+- Estratégia de testes
 
-## Instructions to the AI
+## Instruções para o AI
 
-1. Implement in small, reviewable steps.
-2. Validate behavior after each significant change.
-3. Avoid rewrites unless explicitly approved.
-4. Update docs/changelog based on real behavior change.
-5. Surface unresolved risks and assumptions.
+1. Implementar em passos pequenos e revisáveis.
+2. Validar o comportamento após cada mudança significativa.
+3. Evitar reescritas a menos que explicitamente aprovadas.
+4. Atualizar docs/changelog com base em mudanças reais de comportamento.
+5. Evidenciar riscos e premissas não resolvidas.
 
-## Expected outputs
+## Saídas esperadas
 
-- Working change package
-- Validation notes
-- Updated docs/specs/changelog
+- Pacote de mudança funcional
+- Notas de validação
+- docs/specs/changelog atualizados
 
-## Completion criteria
+## Critérios de conclusão
 
-Feature is implemented, validated, and operational memory is synchronized.
+A funcionalidade está implementada, validada e a memória operacional está sincronizada.

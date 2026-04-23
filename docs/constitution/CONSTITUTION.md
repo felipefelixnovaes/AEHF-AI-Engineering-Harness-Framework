@@ -1,183 +1,183 @@
-# AEHF Constitution
+# Constituição AEHF
 
-This constitution defines the non-negotiable principles of AEHF.
+Esta constituição define os princípios inegociáveis do AEHF.
 
-These principles exist to keep AI-assisted software delivery fast enough to be useful, structured enough to be reliable, and flexible enough to work across tools, teams, and repository types.
+Esses princípios existem para manter a entrega de software assistida por AI rápida o suficiente para ser útil, estruturada o suficiente para ser confiável e flexível o suficiente para funcionar em diferentes ferramentas, equipes e tipos de repositório.
 
-If a workflow, prompt, adapter, or implementation choice conflicts with this constitution, the constitution wins.
+Se um workflow, prompt, adapter ou escolha de implementação entrar em conflito com esta constituição, a constituição prevalece.
 
 ---
 
-## 1. Clarity over ambiguity
+## 1. Clareza acima da ambiguidade
 
-Every meaningful deliverable must make scope, assumptions, tradeoffs, and intended outcomes explicit.
+Todo entregável significativo deve tornar explícitos o escopo, as suposições, os trade-offs e os resultados esperados.
 
-This applies to:
+Isso se aplica a:
 - specs
-- architecture decisions
-- implementation changes
-- review findings
-- validation results
-- documentation updates
+- decisões de arquitetura
+- mudanças de implementação
+- resultados de revisão
+- resultados de validação
+- atualizações de documentação
 
-Hidden assumptions create operational debt.
-If something is unknown, it must be surfaced clearly instead of implied.
-
----
-
-## 2. Incremental evolution over rewrite
-
-Prefer small, reversible, comprehensible change over broad rewrite.
-
-Rewrite is allowed only when it is intentionally justified by evidence such as:
-- unacceptable complexity or coupling
-- severe maintainability failure
-- contract redesign
-- migration constraints that make incremental change unsafe or wasteful
-
-The default stance is:
-**touch-and-raise before rewrite**.
+Suposições ocultas geram dívida operacional.
+Se algo é desconhecido, deve ser evidenciado claramente em vez de apenas insinuado.
 
 ---
 
-## 3. Stable memory over repeated context dumping
+## 2. Evolução incremental acima de reescrita
 
-`docs/` is durable operational memory.
-The framework must not depend on transient chat context, human recollection, or scattered prompt repetition to remain understandable.
+Prefira mudanças pequenas, reversíveis e compreensíveis a grandes reescritas.
 
-Architecture, domains, decisions, gaps, standards, and lessons must be preserved in repository memory.
+A reescrita só é permitida quando justificada intencionalmente por evidências como:
+- complexidade ou acoplamento inaceitáveis
+- falha grave de manutenibilidade
+- redesign de contrato
+- restrições de migração que tornam a mudança incremental insegura ou ineficiente
 
-A strong system should become easier to reason about over time, not harder.
-
----
-
-## 4. Depth on demand over one-size-fits-all process
-
-Not every change deserves the same ritual.
-
-AEHF requires task depth to be classified before deciding how much process, planning, and governance is appropriate.
-
-The default goal is:
-- enough structure to reduce risk
-- not so much structure that delivery collapses into bureaucracy
-
-Fast, Standard, Deep, and Reverse are not labels for prestige.
-They are routing mechanisms for choosing the smallest reliable operating mode.
+A postura padrão é:
+**touch-and-raise antes da reescrita**.
 
 ---
 
-## 5. Explicit assumptions over hallucinated certainty
+## 3. Memória estável acima de despejo repetido de contexto
 
-Unknowns must be labeled as unknowns.
-Assumptions must be declared as assumptions.
-Evidence must be distinguishable from inference.
+`docs/` é a memória operacional durável.
+O framework não deve depender de contexto de chat transitório, recordação humana ou repetição dispersa de prompts para permanecer compreensível.
 
-AEHF rejects false confidence.
-A believable answer is not enough; traceability matters.
+Arquitetura, domínios, decisões, lacunas, padrões e lições devem ser preservados na memória do repositório.
 
-When certainty is unavailable:
-- state what is known
-- state what is assumed
-- state what must be validated
+Um sistema sólido deve se tornar mais fácil de raciocinar ao longo do tempo, não mais difícil.
 
 ---
 
-## 6. No silent drift between code, specs, and docs
+## 4. Profundidade sob demanda acima de processo único para tudo
 
-Behavior, specs, architecture docs, and operational guidance must not silently diverge.
+Nem toda mudança merece o mesmo ritual.
 
-When meaningful change occurs, the corresponding sources of truth must be updated.
+O AEHF exige que a profundidade da tarefa seja classificada antes de decidir quanta quantidade de processo, planejamento e governança é adequada.
 
-This includes changes to:
-- observable behavior
-- architecture understanding
-- domain rules
-- delivery standards
-- known gaps
-- decisions and tradeoffs
+O objetivo padrão é:
+- estrutura suficiente para reduzir o risco
+- não tanta estrutura que a entrega se transforme em burocracia
 
-Silently stale documentation is a quality failure, not a cosmetic issue.
+Fast, Standard, Deep e Reverse não são rótulos de prestígio.
+São mecanismos de roteamento para escolher o menor modo operacional confiável.
 
 ---
 
-## 7. Governance must be lightweight and actionable
+## 5. Suposições explícitas acima de certeza alucinada
 
-Governance exists to improve delivery quality, not to create ritual theater.
+Incógnitas devem ser rotuladas como incógnitas.
+Suposições devem ser declaradas como suposições.
+Evidências devem ser distinguíveis de inferências.
 
-AEHF uses lightweight mechanisms such as:
+O AEHF rejeita confiança falsa.
+Uma resposta plausível não é suficiente; rastreabilidade importa.
+
+Quando a certeza não está disponível:
+- declare o que é conhecido
+- declare o que é assumido
+- declare o que deve ser validado
+
+---
+
+## 6. Sem divergência silenciosa entre código, specs e docs
+
+Comportamento, specs, documentação de arquitetura e orientações operacionais não devem divergir silenciosamente.
+
+Quando ocorre uma mudança significativa, as fontes de verdade correspondentes devem ser atualizadas.
+
+Isso inclui mudanças em:
+- comportamento observável
+- entendimento de arquitetura
+- regras de domínio
+- padrões de entrega
+- lacunas conhecidas
+- decisões e trade-offs
+
+Documentação silenciosamente desatualizada é uma falha de qualidade, não um problema cosmético.
+
+---
+
+## 7. Governança deve ser leve e acionável
+
+A governança existe para melhorar a qualidade da entrega, não para criar teatro ritual.
+
+O AEHF usa mecanismos leves como:
 - ADRs
-- changelog updates
-- review artifacts
-- validation artifacts
-- release checklists
-- risk prompts
+- atualizações de changelog
+- artefatos de revisão
+- artefatos de validação
+- checklists de release
+- prompts de risco
 
-Governance should answer real delivery questions:
-- what changed
-- why it changed
-- what risk was accepted
-- what still needs validation
+A governança deve responder perguntas reais de entrega:
+- o que mudou
+- por que mudou
+- qual risco foi aceito
+- o que ainda precisa de validação
 
-If governance stops being actionable, it should be simplified.
-
----
-
-## 8. Tool adapters may vary; the method remains universal
-
-Different AI tools consume context differently.
-That is expected.
-
-Adapters may change how repository memory is delivered, but they must not change the underlying AEHF method.
-
-The method stays constant across tools:
-- classify depth
-- consult durable memory
-- execute incrementally
-- review and validate appropriately
-- update project memory
-
-Adapters exist to improve context delivery, not fragment the framework.
+Se a governança deixar de ser acionável, deve ser simplificada.
 
 ---
 
-## 9. The repository is part of the execution system
+## 8. Adapters de ferramentas podem variar; o método permanece universal
 
-In AEHF, the repository is not just a container for code.
-It is an operational system for delivery.
+Diferentes ferramentas de AI consomem contexto de formas distintas.
+Isso é esperado.
 
-That means:
-- `docs/` carries durable memory
-- `specs/` carries change intent and execution structure
-- `prompts/` carries reusable workflows
-- `CHANGELOG.md` carries visible evolution
-- adapters carry tool-specific context delivery
+Os adapters podem mudar como a memória do repositório é entregue, mas não devem alterar o método AEHF subjacente.
 
-The repository itself must help reduce ambiguity, not amplify it.
+O método permanece constante entre as ferramentas:
+- classificar a profundidade
+- consultar a memória durável
+- executar de forma incremental
+- revisar e validar adequadamente
+- atualizar a memória do projeto
 
----
-
-## 10. Human judgment remains part of the system
-
-AEHF is designed for AI-assisted software delivery, not blind automation.
-
-Human validation remains necessary when:
-- risk is high
-- ambiguity is unresolved
-- contracts may change
-- business impact is significant
-- evidence is incomplete
-
-Automation should increase leverage, not erase accountability.
+Os adapters existem para melhorar a entrega de contexto, não para fragmentar o framework.
 
 ---
 
-## Final rule
+## 9. O repositório faz parte do sistema de execução
 
-AEHF exists to create governed progress.
+No AEHF, o repositório não é apenas um contêiner para código.
+É um sistema operacional de entrega.
 
-When in doubt, choose the path that best preserves:
-- clarity
-- traceability
-- incremental reliability
-- durable memory
-- honest uncertainty
+Isso significa:
+- `docs/` carrega a memória durável
+- `specs/` carrega a intenção de mudança e a estrutura de execução
+- `prompts/` carrega workflows reutilizáveis
+- `CHANGELOG.md` carrega a evolução visível
+- adapters carregam a entrega de contexto específica de cada ferramenta
+
+O próprio repositório deve ajudar a reduzir a ambiguidade, não amplificá-la.
+
+---
+
+## 10. O julgamento humano permanece parte do sistema
+
+O AEHF foi projetado para entrega de software assistida por AI, não para automação cega.
+
+A validação humana permanece necessária quando:
+- o risco é alto
+- a ambiguidade não está resolvida
+- os contratos podem mudar
+- o impacto no negócio é significativo
+- as evidências são incompletas
+
+A automação deve aumentar a alavancagem, não eliminar a responsabilidade.
+
+---
+
+## Regra final
+
+O AEHF existe para criar progresso governado.
+
+Em caso de dúvida, escolha o caminho que melhor preserva:
+- clareza
+- rastreabilidade
+- confiabilidade incremental
+- memória durável
+- incerteza honesta

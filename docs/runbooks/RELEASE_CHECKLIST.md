@@ -1,10 +1,10 @@
-# Release Checklist
+# Checklist de Release
 
-- [ ] Scope completed and reviewed
-- [ ] Task depth classification documented
-- [ ] Required artifacts exist for selected depth
-- [ ] Behavior changes validated
-- [ ] Risk prompts reviewed and resolved
-- [ ] Docs/specs/changelog synchronized
-- [ ] ADRs captured for significant decisions
-- [ ] Rollback/contingency noted when needed
+- [ ] Escopo concluído e revisado
+- [ ] Classificação de profundidade de tarefa documentada
+- [ ] Artefatos necessários existem para a profundidade selecionada
+- [ ] Mudanças de comportamento validadas
+- [ ] Risk prompts revisados e resolvidos
+- [ ] Docs/specs/changelog sincronizados
+- [ ] ADRs capturados para decisões significativas
+- [ ] Rollback/contingência registrado quando necessário

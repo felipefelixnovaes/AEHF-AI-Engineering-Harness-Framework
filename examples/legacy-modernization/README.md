@@ -1,27 +1,27 @@
-# Example: Legacy Modernization
+# Exemplo: Modernização de Sistema Legado
 
-## Scenario
+## Cenário
 
-An enterprise team must modernize a legacy system with fragile integrations and limited test coverage.
+Uma equipe corporativa precisa modernizar um sistema legado com integrações frágeis e cobertura de testes limitada.
 
-## Why AEHF applies
+## Por que o AEHF se aplica
 
-AEHF supports reverse-depth analysis and touch-and-raise modernization without high-risk rewrites.
+O AEHF suporta análise de profundidade Reverse e modernização touch-and-raise sem reescritas de alto risco.
 
-## Suggested workflow
+## Fluxo de trabalho sugerido
 
-1. Brownfield prompts for analysis and inventory
-2. Reverse prompts for AS-IS, discrepancies, and gap backlog
-3. Deep specs for high-risk modernization slices
-4. Governance prompts for risk and human handoff decisions
+1. Prompts brownfield para análise e inventário
+2. Prompts reverse para AS-IS, discrepâncias e backlog de lacunas
+3. Specs Deep para fatias de modernização de alto risco
+4. Prompts de governança para decisões de risco e handoff humano
 
-## Artifacts to start with
+## Artefatos para começar
 
 - `docs/as-is/AS_IS_TEMPLATE.md`
 - `docs/gaps/GAP_TEMPLATE.md`
 - `docs/standards/TOUCH_AND_RAISE_PATTERN.md`
 
-## Likely first prompts
+## Primeiros prompts prováveis
 
 - `prompts/brownfield/01-analyze-repo.prompt.md`
 - `prompts/reverse/01-build-as-is.prompt.md`

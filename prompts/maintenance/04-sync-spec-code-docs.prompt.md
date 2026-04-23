@@ -1,31 +1,31 @@
-# 04 - Sync Spec, Code, and Docs
+# 04 - Sincronizar Spec, Código e Docs
 
-## Purpose
+## Propósito
 
-Detect and resolve drift among intended behavior, implementation, and documentation.
+Detectar e resolver a deriva entre o comportamento pretendido, a implementação e a documentação.
 
-## When to use
+## Quando usar
 
-After complex changes or before release readiness checks.
+Após mudanças complexas ou antes de verificações de prontidão para release.
 
-## Required inputs
+## Entradas necessárias
 
-- Active specs
-- Code changes
-- Relevant docs and runbooks
+- Specs ativas
+- Mudanças no código
+- Docs e runbooks relevantes
 
-## Instructions to the AI
+## Instruções para a AI
 
-1. Compare declared behavior vs implemented behavior.
-2. Identify missing updates in docs/specs.
-3. Propose minimal corrections to remove drift.
-4. Highlight any unresolved contradictions.
+1. Comparar o comportamento declarado vs. o comportamento implementado.
+2. Identificar atualizações ausentes em docs/specs.
+3. Propor correções mínimas para eliminar a deriva.
+4. Destacar quaisquer contradições não resolvidas.
 
-## Expected outputs
+## Saídas esperadas
 
-- Drift report
-- Sync update plan
+- Relatório de deriva
+- Plano de atualização de sincronização
 
-## Completion criteria
+## Critérios de conclusão
 
-Spec/code/docs are aligned and review-ready.
+Spec/código/docs estão alinhados e prontos para revisão.

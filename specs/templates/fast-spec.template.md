@@ -1,20 +1,20 @@
-# Fast Spec Template
+# Template de Spec Fast
 
-## Purpose
+## Propósito
 
-Describe a low-risk, tightly scoped change with minimal overhead.
+Descrever uma mudança de baixo risco e escopo restrito com overhead mínimo.
 
-## Scope
+## Escopo
 
-- In scope:
-- Out of scope:
+- No escopo:
+- Fora do escopo:
 
-## Why now
+## Por que agora
 
-## Assumptions
+## Suposições
 
-## Change outline
+## Esboço da mudança
 
-## Validation approach
+## Abordagem de validação
 
-## Documentation impact
+## Impacto na documentação

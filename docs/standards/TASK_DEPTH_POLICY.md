@@ -1,243 +1,243 @@
-# Task Depth Policy
+# Política de Profundidade de Tarefa
 
-AEHF supports four task depths:
+O AEHF suporta quatro profundidades de tarefa:
 
 - Fast
 - Standard
 - Deep
 - Reverse
 
-The purpose of this policy is to choose the **smallest reliable level of process** for a task.
+O objetivo desta política é escolher o **menor nível confiável de processo** para uma tarefa.
 
-This is not a maturity ladder and not a prestige system.
-A deeper level is not automatically better.
-The correct level is the one that matches risk, ambiguity, scope, and reversibility.
+Isso não é uma escada de maturidade nem um sistema de prestígio.
+Um nível mais profundo não é automaticamente melhor.
+O nível correto é aquele que corresponde ao risco, ambiguidade, escopo e reversibilidade.
 
 ---
 
-## Core rule
+## Regra fundamental
 
-Always classify task depth before deciding:
-- which artifacts to create
-- how much planning is needed
-- how much review is needed
-- how much validation is needed
-- whether human escalation is required
+Sempre classifique a profundidade da tarefa antes de decidir:
+- quais artefatos criar
+- quanta planejamento é necessário
+- quanta revisão é necessária
+- quanta validação é necessária
+- se é necessária escalada para validação humana
 
-If the selected depth is too shallow, important risks go unmanaged.
-If it is too deep, the process becomes wasteful and slows adoption.
+Se a profundidade selecionada for rasa demais, riscos importantes ficam sem gestão.
+Se for profunda demais, o processo se torna desperdiçador e retarda a adoção.
 
 ---
 
 ## 1) Fast
 
-### Use when
-Use Fast for tiny, low-risk, highly local changes where behavior is already well understood.
+### Quando usar
+Use Fast para mudanças minúsculas, de baixo risco e altamente locais, onde o comportamento já é bem compreendido.
 
-### Typical scope
-- typo fixes
-- local documentation alignment
-- minor configuration edits
-- very small low-risk bug fixes
-- tiny refactors with no external contract impact
+### Escopo típico
+- correções de erros tipográficos
+- alinhamento local de documentação
+- edições menores de configuração
+- correções de bugs muito pequenas e de baixo risco
+- refatorações minúsculas sem impacto em contratos externos
 
-### Typical characteristics
-- touches one small area
-- low ambiguity
-- low blast radius
-- easy to review quickly
-- easy to validate directly
+### Características típicas
+- toca uma pequena área
+- baixa ambiguidade
+- baixo raio de impacto
+- fácil de revisar rapidamente
+- fácil de validar diretamente
 
-### Required artifacts
-At minimum:
-- a small spec or intent note
-- a task list or execution checklist
-- any directly affected doc updates
+### Artefatos necessários
+No mínimo:
+- um pequeno spec ou nota de intenção
+- uma lista de tarefas ou checklist de execução
+- quaisquer atualizações de docs diretamente afetados
 
-### Review expectation
-- light review
-- confirm no silent behavior change
-- confirm docs are still aligned
+### Expectativa de revisão
+- revisão leve
+- confirmar que não há mudança silenciosa de comportamento
+- confirmar que os docs ainda estão alinhados
 
-### Validation expectation
-- direct observable check
-- lightweight testing or equivalent evidence
+### Expectativa de validação
+- verificação observável direta
+- testes leves ou evidências equivalentes
 
-### Do not use Fast when
-- multiple modules are involved
-- external behavior may change
-- legacy behavior is unclear
-- the task seems small but has hidden coupling
+### Não use Fast quando
+- múltiplos módulos estão envolvidos
+- o comportamento externo pode mudar
+- o comportamento legado não está claro
+- a tarefa parece pequena mas tem acoplamento oculto
 
 ---
 
 ## 2) Standard
 
-### Use when
-Use Standard for normal feature work, bounded refactors, and moderate-impact fixes where the repository understanding is reasonably reliable.
+### Quando usar
+Use Standard para trabalho normal de features, refatorações delimitadas e correções de impacto moderado onde o entendimento do repositório é razoavelmente confiável.
 
-### Typical scope
-- a feature in one subsystem
-- a bounded workflow change
-- a moderate refactor
-- a normal bug fix with visible user or system impact
+### Escopo típico
+- uma feature em um subsistema
+- uma mudança de fluxo delimitada
+- uma refatoração moderada
+- uma correção de bug normal com impacto visível para usuário ou sistema
 
-### Typical characteristics
-- limited but meaningful impact
-- moderate ambiguity
-- one or two main modules or domains involved
-- normal review and validation required
+### Características típicas
+- impacto limitado mas significativo
+- ambiguidade moderada
+- um ou dois módulos ou domínios principais envolvidos
+- revisão e validação normais necessárias
 
-### Required artifacts
-Typically:
+### Artefatos necessários
+Tipicamente:
 - `spec.md`
 - `plan.md`
 - `tasks.md`
 - `review.md`
 - `validate.md`
 
-### Review expectation
-- confirm alignment with intended behavior
-- check standards compliance
-- check docs/spec/code alignment
-- identify missing risks or gaps
+### Expectativa de revisão
+- confirmar alinhamento com o comportamento pretendido
+- verificar conformidade com padrões
+- verificar alinhamento docs/spec/código
+- identificar riscos ou lacunas ausentes
 
-### Validation expectation
-- appropriate tests or equivalent evidence
-- explicit validation of changed observable behavior
+### Expectativa de validação
+- testes adequados ou evidências equivalentes
+- validação explícita do comportamento observável alterado
 
-### Do not use Standard when
-- risk is materially high
-- architecture or contracts are changing broadly
-- current behavior is not well understood
-- migration complexity is significant
+### Não use Standard quando
+- o risco é materialmente alto
+- arquitetura ou contratos estão mudando amplamente
+- o comportamento atual não é bem compreendido
+- a complexidade de migração é significativa
 
 ---
 
 ## 3) Deep
 
-### Use when
-Use Deep for high-risk, cross-cutting, high-cost, or contract-affecting work.
+### Quando usar
+Use Deep para trabalho de alto risco, transversal, alto custo ou que afeta contratos.
 
-### Typical scope
-- architectural refactors
-- critical reliability or security changes
-- migrations across modules or boundaries
-- data model or interface changes
-- operationally sensitive delivery work
+### Escopo típico
+- refatorações arquiteturais
+- mudanças críticas de confiabilidade ou segurança
+- migrações entre módulos ou limites
+- mudanças de modelo de dados ou interface
+- entrega operacionalmente sensível
 
-### Typical characteristics
-- multiple modules or domains involved
-- elevated blast radius
-- higher cost of failure
-- more coordination needed
-- stronger governance and validation needed
+### Características típicas
+- múltiplos módulos ou domínios envolvidos
+- raio de impacto elevado
+- custo de falha mais alto
+- mais coordenação necessária
+- governança e validação mais rigorosas necessárias
 
-### Required artifacts
-Typically:
-- deep `spec.md`
+### Artefatos necessários
+Tipicamente:
+- `spec.md` detalhado
 - `plan.md`
 - `tasks.md`
 - `review.md`
 - `validate.md`
-- risk analysis notes
-- rollout or release considerations
-- ADRs when architectural or policy decisions are being made
+- notas de análise de risco
+- considerações de rollout ou release
+- ADRs quando decisões arquiteturais ou de política estão sendo tomadas
 
-### Review expectation
-- stronger scrutiny for architecture, contracts, and rollback strategy
-- explicit identification of residual risk
-- confirmation that broader system effects were considered
+### Expectativa de revisão
+- escrutínio mais rigoroso para arquitetura, contratos e estratégia de rollback
+- identificação explícita de risco residual
+- confirmação de que efeitos mais amplos no sistema foram considerados
 
-### Validation expectation
-- stronger evidence
-- broader testing or verification
-- explicit readiness assessment
-- human validation if risk remains high
+### Expectativa de validação
+- evidências mais sólidas
+- testes ou verificação mais abrangentes
+- avaliação explícita de prontidão
+- validação humana se o risco permanecer alto
 
-### Do not use Deep when
-- the task is truly small and local
-- the extra ritual would add no real control value
+### Não use Deep quando
+- a tarefa é verdadeiramente pequena e local
+- o ritual extra não agregaria valor real de controle
 
 ---
 
 ## 4) Reverse
 
-### Use when
-Use Reverse for legacy or opaque systems where current behavior must be reconstructed before safe change can happen.
+### Quando usar
+Use Reverse para sistemas legados ou opacos onde o comportamento atual deve ser reconstruído antes que mudanças seguras possam ocorrer.
 
-### Typical scope
-- modernization of poorly documented modules
-- high-risk hot spots with unclear behavior
-- inherited systems with conflicting expectations
-- areas where the team lacks trustworthy as-is understanding
+### Escopo típico
+- modernização de módulos pouco documentados
+- pontos críticos de alto risco com comportamento obscuro
+- sistemas herdados com expectativas conflitantes
+- áreas onde a equipe não possui um entendimento as-is confiável
 
-### Typical characteristics
-- uncertainty is the main risk
-- existing behavior may be implicit or contradictory
-- documentation is missing, stale, or untrusted
-- safe change requires discovery first
+### Características típicas
+- incerteza é o principal risco
+- o comportamento existente pode ser implícito ou contraditório
+- documentação está ausente, desatualizada ou não é confiável
+- mudança segura requer descoberta prévia
 
-### Required artifacts
-Typically:
-- reverse `spec.md`
-- as-is artifacts
-- to-be artifacts when appropriate
-- discrepancy analysis
-- gap backlog
-- touch-and-raise plan
+### Artefatos necessários
+Tipicamente:
+- `spec.md` Reverse
+- artefatos as-is
+- artefatos to-be quando apropriado
+- análise de discrepâncias
+- backlog de lacunas
+- plano touch-and-raise
 
-### Review expectation
-- verify that current behavior was distinguished from desired behavior
-- verify that assumptions were made explicit
-- check whether gaps and discrepancies were captured honestly
+### Expectativa de revisão
+- verificar se o comportamento atual foi distinguido do comportamento desejado
+- verificar se as premissas foram tornadas explícitas
+- verificar se lacunas e discrepâncias foram capturadas com honestidade
 
-### Validation expectation
-- validate discovered behavior before relying on it
-- confirm that proposed change path preserves safety
-- escalate when reconstructed understanding remains uncertain
+### Expectativa de validação
+- validar o comportamento descoberto antes de depender dele
+- confirmar que o caminho de mudança proposto preserva a segurança
+- escalar quando o entendimento reconstruído ainda permanecer incerto
 
-### Do not use Reverse when
-- current behavior is already clear and well documented
-- the task can be safely handled with Standard or Deep
-
----
-
-## Selection guidance
-
-Choose the smallest depth that safely handles:
-- uncertainty
-- impact
-- coupling
-- reversibility
-- validation burden
-
-A useful rule of thumb:
-- if it is tiny and obvious, use **Fast**
-- if it is normal product or engineering work, use **Standard**
-- if it is risky or cross-cutting, use **Deep**
-- if the current system is unclear, use **Reverse**
+### Não use Reverse quando
+- o comportamento atual já está claro e bem documentado
+- a tarefa pode ser tratada com segurança usando Standard ou Deep
 
 ---
 
-## Escalation rules
+## Orientação de seleção
 
-Move to a deeper level when any of the following becomes true:
-- scope expands beyond the original boundary
-- hidden coupling appears
-- current behavior is less understood than expected
-- validation becomes more complex than expected
-- external contracts may change
-- risk is higher than originally assumed
+Escolha a menor profundidade que trate com segurança:
+- incerteza
+- impacto
+- acoplamento
+- reversibilidade
+- carga de validação
 
-It is acceptable to start at one depth and escalate later.
-It is not acceptable to stay shallow after the risk picture changes.
+Uma regra prática útil:
+- se for minúsculo e óbvio, use **Fast**
+- se for trabalho normal de produto ou engenharia, use **Standard**
+- se for arriscado ou transversal, use **Deep**
+- se o sistema atual não estiver claro, use **Reverse**
 
 ---
 
-## Final rule
+## Regras de escalada
 
-Task depth is a control mechanism.
-Use it to keep delivery proportional, reviewable, and reliable.
+Mova para um nível mais profundo quando qualquer um dos seguintes se tornar verdade:
+- o escopo se expande além do limite original
+- acoplamento oculto aparece
+- o comportamento atual é menos compreendido do que o esperado
+- a validação se torna mais complexa do que o esperado
+- contratos externos podem mudar
+- o risco é maior do que originalmente assumido
 
-AEHF works best when the process is neither too light nor too heavy, but matched to reality.
+É aceitável começar em uma profundidade e escalar depois.
+Não é aceitável permanecer raso depois que o quadro de risco muda.
+
+---
+
+## Regra final
+
+A profundidade de tarefa é um mecanismo de controle.
+Use-a para manter a entrega proporcional, revisável e confiável.
+
+O AEHF funciona melhor quando o processo não é nem muito leve nem muito pesado, mas compatível com a realidade.

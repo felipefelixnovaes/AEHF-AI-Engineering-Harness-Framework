@@ -1,21 +1,21 @@
-# Deep Spec Template
+# Template de Spec Deep
 
-## Executive summary
+## Resumo executivo
 
-## Context and drivers
+## Contexto e motivadores
 
-## Current state analysis
+## Análise do estado atual
 
-## Target state design
+## Design do estado alvo
 
-## Detailed implementation strategy
+## Estratégia detalhada de implementação
 
-## Dependency and integration impact
+## Impacto em dependências e integrações
 
-## Risk analysis (technical, operational, delivery)
+## Análise de risco (técnico, operacional, de entrega)
 
-## Validation matrix (functional, non-functional, regression)
+## Matriz de validação (funcional, não funcional, regressão)
 
-## Rollout and rollback plan
+## Plano de rollout e rollback
 
-## Documentation and ADR requirements
+## Requisitos de documentação e ADR

@@ -1,32 +1,32 @@
-# 03 - Create Domain Map
+# 03 - Criar Mapa de Domínios
 
-## Purpose
+## Propósito
 
-Identify domain boundaries and responsibilities to reduce coupling early.
+Identificar limites e responsabilidades de domínio para reduzir o acoplamento desde o início.
 
-## When to use
+## Quando usar
 
-After first architecture draft or before major feature decomposition.
+Após o primeiro rascunho de arquitetura ou antes de uma grande decomposição de funcionalidades.
 
-## Required inputs
+## Entradas necessárias
 
-- Architecture sketch
-- Business capabilities
-- Initial backlog themes
+- Esboço de arquitetura
+- Capacidades de negócio
+- Temas iniciais do backlog
 
-## Instructions to the AI
+## Instruções para o AI
 
-1. Extract domain candidates and responsibilities.
-2. Define interactions and dependency direction.
-3. Flag ambiguous ownership zones.
-4. Recommend domain documentation priorities.
+1. Extrair candidatos a domínio e responsabilidades.
+2. Definir interações e direção de dependência.
+3. Sinalizar zonas de propriedade ambígua.
+4. Recomendar prioridades de documentação de domínio.
 
-## Expected outputs
+## Saídas esperadas
 
-- Domain map table
-- Domain boundary notes
-- Suggested `docs/domains/` artifacts
+- Tabela de mapa de domínios
+- Notas de limites de domínio
+- Artefatos sugeridos para `docs/domains/`
 
-## Completion criteria
+## Critérios de conclusão
 
-Domains are clear enough to assign ownership and plan feature work safely.
+Os domínios estão suficientemente claros para atribuir propriedade e planejar o trabalho de funcionalidades com segurança.

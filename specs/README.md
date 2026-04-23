@@ -1,19 +1,19 @@
-# Specs Layer
+# Camada de Specs
 
-`specs/` is the active change package for implementation work.
+`specs/` é o pacote de mudança ativo para trabalhos de implementação.
 
-Use templates from `specs/templates/` according to task depth selected in `docs/standards/TASK_DEPTH_POLICY.md`.
+Use templates de `specs/templates/` de acordo com a profundidade de tarefa selecionada em `docs/standards/TASK_DEPTH_POLICY.md`.
 
-## Intent
+## Intenção
 
-- reduce ambiguity before execution
-- make assumptions explicit
-- produce auditable implementation artifacts
+- reduzir ambiguidade antes da execução
+- tornar suposições explícitas
+- produzir artefatos de implementação auditáveis
 
-## Typical package contents
+## Conteúdo típico do pacote
 
-- depth-specific spec (fast/standard/deep/reverse)
-- execution plan
-- task breakdown
-- review notes
-- validation notes
+- spec específica de profundidade (fast/standard/deep/reverse)
+- plano de execução
+- detalhamento de tarefas
+- notas de revisão
+- notas de validação

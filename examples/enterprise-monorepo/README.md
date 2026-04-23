@@ -1,27 +1,27 @@
-# Example: Enterprise Monorepo
+# Exemplo: Monorepo Corporativo
 
-## Scenario
+## Cenário
 
-Multiple teams share a large monorepo with varied maturity and strict governance needs.
+Múltiplas equipes compartilham um grande monorepo com maturidade variada e necessidades rígidas de governança.
 
-## Why AEHF applies
+## Por que o AEHF se aplica
 
-AEHF offers common standards and adaptive depth so teams align without forcing one rigid process.
+O AEHF oferece padrões comuns e profundidade adaptativa para que as equipes se alinhem sem impor um processo rígido único.
 
-## Suggested workflow
+## Fluxo de trabalho sugerido
 
-1. Define domain maps and ownership boundaries
-2. Apply Standard depth by default, Deep for cross-cutting changes
-3. Use governance prompts for risk gating and release readiness
-4. Capture ADRs and lessons continuously
+1. Definir mapas de domínio e limites de responsabilidade
+2. Aplicar profundidade Standard por padrão, Deep para mudanças transversais
+3. Usar prompts de governança para gate de risco e prontidão de release
+4. Capturar ADRs e lições continuamente
 
-## Artifacts to start with
+## Artefatos para começar
 
 - `docs/architecture/INVENTORY.md`
 - `docs/domains/DOMAIN_TEMPLATE.md`
 - `docs/standards/TASK_DEPTH_POLICY.md`
 
-## Likely first prompts
+## Primeiros prompts prováveis
 
 - `prompts/brownfield/02-create-inventory.prompt.md`
 - `prompts/governance/01-classify-task-depth.prompt.md`

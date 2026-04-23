@@ -1,14 +1,14 @@
-# Tasks Template
+# Template de Tarefas
 
-- [ ] Task 1: 
-  - Owner:
-  - Expected output:
-  - Validation:
-- [ ] Task 2:
-  - Owner:
-  - Expected output:
-  - Validation:
-- [ ] Task 3:
-  - Owner:
-  - Expected output:
-  - Validation:
+- [ ] Tarefa 1: 
+  - Responsável:
+  - Saída esperada:
+  - Validação:
+- [ ] Tarefa 2:
+  - Responsável:
+  - Saída esperada:
+  - Validação:
+- [ ] Tarefa 3:
+  - Responsável:
+  - Saída esperada:
+  - Validação:

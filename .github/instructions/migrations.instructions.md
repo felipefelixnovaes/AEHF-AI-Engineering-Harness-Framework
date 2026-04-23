@@ -1,6 +1,6 @@
-# Migrations Instructions
+# Instruções de Migrações
 
-- Use touch-and-raise over speculative rewrite.
-- Capture AS-IS evidence before major modernization.
-- Sequence migration work into small reversible slices.
-- Require explicit rollback/contingency for high-impact steps.
+- Usar touch-and-raise em vez de reescrita especulativa.
+- Capturar evidências do estado AS-IS antes de grandes modernizações.
+- Sequenciar o trabalho de migração em fatias pequenas e reversíveis.
+- Exigir rollback/contingência explícita para etapas de alto impacto.

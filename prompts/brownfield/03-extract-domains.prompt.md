@@ -1,32 +1,32 @@
-# 03 - Extract Domains
+# 03 - Extrair Domínios
 
-## Purpose
+## Propósito
 
-Infer domain boundaries from existing implementation and operational behavior.
+Inferir limites de domínio a partir da implementação existente e do comportamento operacional.
 
-## When to use
+## Quando usar
 
-After component/dependency inventory is available.
+Após o inventário de componentes/dependências estar disponível.
 
-## Required inputs
+## Entradas necessárias
 
-- Inventory
-- Key workflows/use-cases
-- Team knowledge on ownership
+- Inventário
+- Fluxos de trabalho/casos de uso principais
+- Conhecimento do time sobre propriedade
 
-## Instructions to the AI
+## Instruções para o AI
 
-1. Group modules by business capability.
-2. Propose domain boundaries and interfaces.
-3. Flag coupling and overlap risks.
-4. Suggest candidate domain docs to create first.
+1. Agrupar módulos por capacidade de negócio.
+2. Propor limites de domínio e interfaces.
+3. Sinalizar riscos de acoplamento e sobreposição.
+4. Sugerir docs de domínio candidatos a serem criados primeiro.
 
-## Expected outputs
+## Saídas esperadas
 
-- Domain mapping proposal
-- Coupling risk notes
-- Prioritized documentation steps
+- Proposta de mapeamento de domínios
+- Notas de risco de acoplamento
+- Passos de documentação priorizados
 
-## Completion criteria
+## Critérios de conclusão
 
-Domain model is credible enough to support modernization slicing.
+O modelo de domínio é suficientemente crível para suportar o fatiamento de modernização.

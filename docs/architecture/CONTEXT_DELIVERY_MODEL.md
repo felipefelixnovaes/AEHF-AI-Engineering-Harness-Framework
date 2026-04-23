@@ -1,19 +1,19 @@
-# Context Delivery Model
+# Modelo de Entrega de Contexto
 
-## Core idea
+## Ideia central
 
-All AI tools need context, but each consumes it differently. AEHF standardizes content and allows adapter-specific delivery.
+Todas as ferramentas de AI precisam de contexto, mas cada uma o consome de forma diferente. O AEHF padroniza o conteúdo e permite a entrega específica por adapter.
 
-## Context tiers
+## Camadas de contexto
 
-1. **Foundational context** (constitution + standards)
-2. **Structural context** (architecture + domain maps)
-3. **Task context** (specs + prompt selection)
-4. **Validation context** (tests, risks, readiness)
-5. **Memory updates** (docs/changelog/lessons)
+1. **Contexto fundacional** (constituição + padrões)
+2. **Contexto estrutural** (arquitetura + mapas de domínio)
+3. **Contexto de tarefa** (specs + seleção de prompt)
+4. **Contexto de validação** (testes, riscos, prontidão)
+5. **Atualizações de memória** (docs/changelog/lições)
 
-## Delivery responsibilities
+## Responsabilidades de entrega
 
-- Adapters define where context lives and how it is injected.
-- Teams ensure required artifacts exist before execution.
-- Orchestrator/Reviewer roles enforce context sufficiency.
+- Os adapters definem onde o contexto reside e como é injetado.
+- As equipes garantem que os artefatos necessários existam antes da execução.
+- Os papéis de Orquestrador/Revisor garantem a suficiência do contexto.

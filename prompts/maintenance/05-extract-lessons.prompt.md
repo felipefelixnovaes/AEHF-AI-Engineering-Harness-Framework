@@ -1,31 +1,31 @@
-# 05 - Extract Lessons
+# 05 - Extrair Lições
 
-## Purpose
+## Propósito
 
-Convert delivery experience into reusable framework improvements.
+Converter a experiência de entrega em melhorias reutilizáveis do framework.
 
-## When to use
+## Quando usar
 
-After significant changes, incidents, or difficult migrations.
+Após mudanças significativas, incidentes ou migrações difíceis.
 
-## Required inputs
+## Entradas necessárias
 
-- Change history
-- Validation and review outcomes
-- Team retrospectives
+- Histórico de mudanças
+- Resultados de validação e revisão
+- Retrospectivas da equipe
 
-## Instructions to the AI
+## Instruções para a AI
 
-1. Identify what worked and what created friction.
-2. Distill actionable process adjustments.
-3. Draft lessons artifact and ownership follow-ups.
-4. Suggest updates to prompts/standards if needed.
+1. Identificar o que funcionou e o que gerou fricção.
+2. Destilar ajustes de processo acionáveis.
+3. Redigir artefato de lições e acompanhamentos de responsabilidade.
+4. Sugerir atualizações em prompts/padrões se necessário.
 
-## Expected outputs
+## Saídas esperadas
 
-- Lessons learned draft
-- Improvement actions and owners
+- Rascunho de lições aprendidas
+- Ações de melhoria e responsáveis
 
-## Completion criteria
+## Critérios de conclusão
 
-Lessons are concrete, reusable, and linked to framework evolution.
+As lições são concretas, reutilizáveis e vinculadas à evolução do framework.

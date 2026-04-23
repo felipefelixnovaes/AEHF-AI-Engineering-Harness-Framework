@@ -1,27 +1,27 @@
-# Example: Greenfield SaaS
+# Exemplo: SaaS Greenfield
 
-## Scenario
+## Cenário
 
-A startup is launching a multi-tenant SaaS MVP with a small team and aggressive timeline.
+Uma startup está lançando um MVP SaaS multi-tenant com uma equipe pequena e prazo agressivo.
 
-## Why AEHF applies
+## Por que o AEHF se aplica
 
-AEHF provides enough structure to avoid design drift while keeping execution lightweight.
+O AEHF fornece estrutura suficiente para evitar deriva de design enquanto mantém a execução leve.
 
-## Suggested workflow
+## Fluxo de trabalho sugerido
 
-1. Greenfield prompts `01` to `05`
-2. Standard specs for core features
-3. ADRs for major architecture choices
-4. Release and doc sync runbooks for every increment
+1. Prompts greenfield `01` a `05`
+2. Specs Standard para funcionalidades centrais
+3. ADRs para as principais escolhas arquiteturais
+4. Runbooks de release e sincronização de docs para cada incremento
 
-## Artifacts to start with
+## Artefatos para começar
 
 - `specs/templates/standard-spec.template.md`
 - `docs/domains/DOMAIN_TEMPLATE.md`
 - `docs/architecture/REPOSITORY_MODEL.md`
 
-## Likely first prompts
+## Primeiros prompts prováveis
 
 - `prompts/greenfield/01-bootstrap-project.prompt.md`
 - `prompts/greenfield/02-first-architecture.prompt.md`
