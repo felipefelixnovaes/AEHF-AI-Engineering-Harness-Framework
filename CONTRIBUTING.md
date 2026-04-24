@@ -1,31 +1,31 @@
-# Contributing to AEHF
+# Contribuindo com o AEHF
 
-Thanks for contributing to AEHF.
+Obrigado por contribuir com o AEHF.
 
-This repository is not just a collection of templates and prompts.
-It is a framework repository, so contribution quality depends on clarity, consistency, and respect for the method.
+Este repositório não é apenas uma coleção de templates e prompts.
+É um repositório de framework, portanto a qualidade da contribuição depende de clareza, consistência e respeito ao método.
 
-Contributions should make the framework:
-- more useful
-- more coherent
-- more portable
-- more trustworthy
-- easier to adopt in real repositories
+As contribuições devem tornar o framework:
+- mais útil
+- mais coerente
+- mais portátil
+- mais confiável
+- mais fácil de adotar em repositórios reais
 
 ---
 
-## Contribution principles
+## Princípios de contribuição
 
-All contributions should follow these principles:
+Todas as contribuições devem seguir estes princípios:
 
-- keep changes incremental and reviewable
-- preserve existing behavior unless change is intentional and documented
-- align every change with the AEHF constitution and standards
-- prefer clarity over novelty
-- prefer durable improvements over clever local hacks
-- treat documentation as part of delivery, not an afterthought
+- manter as mudanças incrementais e revisáveis
+- preservar o comportamento existente salvo se a mudança for intencional e documentada
+- alinhar cada mudança com a constituição e os padrões do AEHF
+- preferir clareza a novidade
+- preferir melhorias duráveis a gambiarras locais inteligentes
+- tratar a documentação como parte da entrega, não como reflexão tardia
 
-Before contributing, read:
+Antes de contribuir, leia:
 - `README.md`
 - `docs/constitution/CONSTITUTION.md`
 - `docs/standards/TASK_DEPTH_POLICY.md`
@@ -33,116 +33,116 @@ Before contributing, read:
 
 ---
 
-## What kinds of contributions are welcome
+## Quais tipos de contribuições são bem-vindas
 
-Examples of valuable contributions:
+Exemplos de contribuições valiosas:
 
-- stronger templates
-- clearer standards
-- better prompt files
-- improved adapter guidance
-- additional examples
-- cross-platform repository guidance
-- governance improvements that remain lightweight
-- fixes to ambiguity, inconsistency, or drift in the framework itself
+- templates mais robustos
+- padrões mais claros
+- melhores arquivos de prompt
+- orientação aprimorada de adapters
+- exemplos adicionais
+- orientação de repositório multiplataforma
+- melhorias de governança que permaneçam leves
+- correções de ambiguidade, inconsistência ou desvio no próprio framework
 
-Less valuable contributions include:
-- unnecessary verbosity
-- tool-specific lock-in without a good reason
-- speculative expansion with no clear adoption value
-- cosmetic changes that reduce clarity or increase noise
-
----
-
-## Basic workflow
-
-1. Align on the problem or scope.
-2. Classify task depth using `docs/standards/TASK_DEPTH_POLICY.md`.
-3. Create or update the appropriate change package from `specs/templates/` when needed.
-4. Implement in small, reviewable slices.
-5. Update documentation per `docs/standards/DOC_UPDATE_POLICY.md`.
-6. Add an ADR when the decision is architecture-significant or process-significant.
-7. Update `CHANGELOG.md` for notable framework changes.
-8. Submit a PR using `.github/pull_request_template.md`.
+Contribuições menos valiosas incluem:
+- verbosidade desnecessária
+- dependência de ferramenta específica sem bom motivo
+- expansão especulativa sem valor claro de adoção
+- mudanças cosméticas que reduzem clareza ou aumentam ruído
 
 ---
 
-## Contribution guidance by change type
+## Fluxo de trabalho básico
 
-### Documentation and standards changes
-These should:
-- improve clarity
-- reduce ambiguity
-- remain consistent with the AEHF method
-- avoid introducing contradictions across files
-
-### Prompt library changes
-These should:
-- be reusable
-- be outcome-oriented
-- clearly define purpose, inputs, expected outputs, and completion criteria
-- avoid shallow prompt theater
-
-### Adapter changes
-These should:
-- preserve the universal AEHF method
-- improve context delivery for a specific ecosystem
-- avoid changing core principles just because a tool behaves differently
-
-### Example changes
-These should:
-- reduce abstraction
-- show practical adoption paths
-- remain realistic and scenario-driven
+1. Alinhe sobre o problema ou escopo.
+2. Classifique a profundidade da tarefa usando `docs/standards/TASK_DEPTH_POLICY.md`.
+3. Crie ou atualize o pacote de mudança apropriado em `specs/templates/` quando necessário.
+4. Implemente em fatias pequenas e revisáveis.
+5. Atualize a documentação conforme `docs/standards/DOC_UPDATE_POLICY.md`.
+6. Adicione um ADR quando a decisão for significativa para arquitetura ou processo.
+7. Atualize `CHANGELOG.md` para mudanças notáveis no framework.
+8. Envie um PR usando `.github/pull_request_template.md`.
 
 ---
 
-## Quality expectations
+## Orientação de contribuição por tipo de mudança
 
-Do not submit contributions that:
-- rely on speculative rewrites
-- introduce undocumented behavior shifts
-- leave repository memory stale
-- add complexity without improving adoption or clarity
-- fragment the framework into incompatible tool-specific versions
+### Mudanças de documentação e padrões
+Devem:
+- melhorar a clareza
+- reduzir ambiguidades
+- permanecer consistentes com o método AEHF
+- evitar introduzir contradições entre arquivos
 
-Strong contributions usually:
-- improve usability without bloating the framework
-- make repository memory more durable
-- strengthen the relationship between docs, specs, prompts, and adapters
-- help future contributors make better decisions faster
+### Mudanças na biblioteca de prompts
+Devem:
+- ser reutilizáveis
+- ser orientadas a resultados
+- definir claramente propósito, entradas, saídas esperadas e critérios de conclusão
+- evitar teatro de prompt superficial
 
----
+### Mudanças de adapters
+Devem:
+- preservar o método universal do AEHF
+- melhorar a entrega de contexto para um ecossistema específico
+- evitar alterar princípios centrais apenas porque uma ferramenta se comporta de forma diferente
 
-## Pull request acceptance criteria
-
-A pull request is more likely to be accepted when:
-
-- scope is clear and bounded
-- the selected task depth is appropriate
-- required artifacts are present for that depth
-- docs, specs, and repository memory are synchronized
-- risks and assumptions are explicit
-- the change improves clarity, utility, or reliability
-- the framework remains portable and method-consistent
-
----
-
-## Review mindset
-
-Review in this repository is not just about whether text or structure looks good.
-It is about whether the contribution strengthens the framework as an operating method.
-
-Reviewers may reject changes that are technically correct but:
-- bloat the framework
-- weaken portability
-- create contradiction between artifacts
-- optimize for novelty over durable usefulness
+### Mudanças de exemplos
+Devem:
+- reduzir abstração
+- mostrar caminhos práticos de adoção
+- permanecer realistas e orientados a cenários
 
 ---
 
-## Final rule
+## Expectativas de qualidade
 
-Contribute in a way that makes AEHF easier to trust, easier to adopt, and easier to evolve.
+Não envie contribuições que:
+- dependam de reescritas especulativas
+- introduzam mudanças de comportamento não documentadas
+- deixem a memória do repositório desatualizada
+- adicionem complexidade sem melhorar adoção ou clareza
+- fragmentem o framework em versões incompatíveis específicas de ferramentas
 
-If a change makes the repository louder but not clearer, it is probably not a good contribution.
+Contribuições fortes geralmente:
+- melhoram a usabilidade sem inflar o framework
+- tornam a memória do repositório mais durável
+- fortalecem a relação entre docs, specs, prompts e adapters
+- ajudam futuros contribuidores a tomar melhores decisões mais rapidamente
+
+---
+
+## Critérios de aceitação de PR
+
+Um PR tem maior probabilidade de ser aceito quando:
+
+- o escopo é claro e delimitado
+- a profundidade de tarefa selecionada é apropriada
+- os artefatos necessários para essa profundidade estão presentes
+- docs, specs e memória do repositório estão sincronizados
+- riscos e premissas são explícitos
+- a mudança melhora clareza, utilidade ou confiabilidade
+- o framework permanece portátil e consistente com o método
+
+---
+
+## Mentalidade de revisão
+
+A revisão neste repositório não é apenas sobre se o texto ou a estrutura parece bom.
+É sobre se a contribuição fortalece o framework como método operacional.
+
+Os revisores podem rejeitar mudanças que são tecnicamente corretas, mas que:
+- incham o framework
+- enfraquecem a portabilidade
+- criam contradição entre artefatos
+- otimizam para novidade em vez de utilidade durável
+
+---
+
+## Regra final
+
+Contribua de forma que torne o AEHF mais fácil de confiar, mais fácil de adotar e mais fácil de evoluir.
+
+Se uma mudança torna o repositório mais barulhento mas não mais claro, provavelmente não é uma boa contribuição.

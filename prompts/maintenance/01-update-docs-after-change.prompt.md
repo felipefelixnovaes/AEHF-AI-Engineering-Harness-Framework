@@ -1,31 +1,31 @@
-# 01 - Update Docs After Change
+# 01 - Atualizar Docs Após Mudança
 
-## Purpose
+## Propósito
 
-Ensure durable memory reflects implemented behavior and decisions.
+Garantir que a memória durável reflita o comportamento implementado e as decisões tomadas.
 
-## When to use
+## Quando usar
 
-After any change that affects behavior, architecture, standards, or operations.
+Após qualquer mudança que afete comportamento, arquitetura, padrões ou operações.
 
-## Required inputs
+## Entradas necessárias
 
-- Code/spec diffs
-- Existing docs in affected areas
-- Changelog conventions
+- Diffs de código/spec
+- Docs existentes nas áreas afetadas
+- Convenções do changelog
 
-## Instructions to the AI
+## Instruções para a AI
 
-1. Identify all docs impacted by the change.
-2. Draft precise updates and remove stale statements.
-3. Add/update changelog entries for notable changes.
-4. Flag if ADR update is required.
+1. Identificar todos os docs impactados pela mudança.
+2. Redigir atualizações precisas e remover declarações obsoletas.
+3. Adicionar/atualizar entradas no changelog para mudanças relevantes.
+4. Sinalizar se atualização de ADR é necessária.
 
-## Expected outputs
+## Saídas esperadas
 
-- Documentation update checklist
-- Drafted doc/changelog edits
+- Checklist de atualização de documentação
+- Edições redigidas de docs/changelog
 
-## Completion criteria
+## Critérios de conclusão
 
-No silent drift remains between code, specs, and docs.
+Nenhuma deriva silenciosa permanece entre código, specs e docs.

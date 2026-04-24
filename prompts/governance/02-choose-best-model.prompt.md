@@ -1,31 +1,31 @@
-# 02 - Choose Best Model
+# 02 - Escolher o Melhor Modelo
 
-## Purpose
+## Propósito
 
-Select AI model strength appropriate to task depth and risk.
+Selecionar a força do modelo de AI adequada à profundidade da tarefa e ao risco.
 
-## When to use
+## Quando usar
 
-Before major analysis/implementation sessions.
+Antes de sessões importantes de análise/implementação.
 
-## Required inputs
+## Entradas necessárias
 
-- Task depth classification
-- Complexity and ambiguity profile
-- Cost/time constraints
+- Classificação de profundidade da tarefa
+- Perfil de complexidade e ambiguidade
+- Restrições de custo/tempo
 
-## Instructions to the AI
+## Instruções para o AI
 
-1. Recommend model tier for each phase (analysis, implementation, review).
-2. Explain when cheaper models are sufficient.
-3. Define when stronger models are mandatory.
-4. Recommend fallback/escalation strategy.
+1. Recomendar o tier de modelo para cada fase (análise, implementação, revisão).
+2. Explicar quando modelos mais baratos são suficientes.
+3. Definir quando modelos mais robustos são obrigatórios.
+4. Recomendar estratégia de fallback/escalonamento.
 
-## Expected outputs
+## Saídas esperadas
 
-- Model selection matrix
-- Escalation rules
+- Matriz de seleção de modelos
+- Regras de escalonamento
 
-## Completion criteria
+## Critérios de conclusão
 
-Model usage plan balances quality, speed, and cost.
+O plano de uso de modelos equilibra qualidade, velocidade e custo.

@@ -1,108 +1,108 @@
-# Copilot Adapter
+# Adapter Copilot
 
-This adapter explains how AEHF is delivered into GitHub Copilot-style environments.
+Este adapter explica como o AEHF é entregue em ambientes estilo GitHub Copilot.
 
-The AEHF method does not change.
-What changes is how repository memory and execution rules are surfaced to the tool.
-
----
-
-## Adapter purpose
-
-The Copilot adapter exists to:
-- provide a stable global operating contract
-- scope guidance by context or file area
-- reuse prompt files as operational workflows
-- reduce ambiguity without overloading every interaction with repeated context
+O método AEHF não muda.
+O que muda é como a memória do repositório e as regras de execução são disponibilizadas para a ferramenta.
 
 ---
 
-## Adapter components
+## Propósito do adapter
 
-### 1. Global rules
-File:
+O adapter Copilot existe para:
+- fornecer um contrato operacional global estável
+- delimitar orientações por contexto ou área de arquivo
+- reutilizar arquivos de prompt como fluxos de trabalho operacionais
+- reduzir ambiguidade sem sobrecarregar cada interação com contexto repetido
+
+---
+
+## Componentes do adapter
+
+### 1. Regras globais
+Arquivo:
 - `.github/copilot-instructions.md`
 
-Purpose:
-- define repository-wide behavior expectations
-- preserve the AEHF method at the highest level
-- establish rules for change, documentation, uncertainty, and validation
+Propósito:
+- definir expectativas de comportamento em todo o repositório
+- preservar o método AEHF no nível mais alto
+- estabelecer regras para mudança, documentação, incerteza e validação
 
-### 2. Scoped rules
-Files:
+### 2. Regras delimitadas
+Arquivos:
 - `.github/instructions/*.instructions.md`
 
-Purpose:
-- provide narrower behavior guidance by path or concern
-- adapt the framework to backend, frontend, docs, tests, migrations, or other scoped work
-- avoid forcing one oversized instruction file to carry the whole method
+Propósito:
+- fornecer orientações de comportamento mais específicas por caminho ou preocupação
+- adaptar o framework a backend, frontend, docs, testes, migrações ou outros trabalhos delimitados
+- evitar forçar um único arquivo de instrução grande a carregar o método inteiro
 
-### 3. Reusable execution prompts
-Files:
+### 3. Prompts de execução reutilizáveis
+Arquivos:
 - `prompts/**/*.prompt.md`
 
-Purpose:
-- provide reusable workflows for greenfield, brownfield, reverse, maintenance, and governance scenarios
-- reduce ad hoc prompting and improve repeatability
+Propósito:
+- fornecer fluxos de trabalho reutilizáveis para cenários greenfield, brownfield, reverse, manutenção e governança
+- reduzir prompting ad hoc e melhorar a repetibilidade
 
 ---
 
-## Operating expectations
+## Expectativas operacionais
 
-When using Copilot in this repository, the expected behavior is:
+Ao usar Copilot neste repositório, o comportamento esperado é:
 
-- preserve behavior unless change is intentional and documented
-- prefer incremental changes over rewrite
-- classify task depth before creating artifacts
-- use `docs/` as durable source of truth
-- use `specs/` as the per-change execution package
-- update docs when behavior, architecture, or decisions change
-- surface assumptions explicitly
-- escalate to human validation when risk is high
-
----
-
-## Why this adapter is structured this way
-
-Copilot works better when context is layered rather than dumped.
-
-This adapter therefore separates:
-- universal repository rules
-- scoped guidance by area
-- reusable execution workflows
-
-That structure helps the framework stay:
-- more portable
-- more maintainable
-- less repetitive
-- more usable across different tasks
+- preservar o comportamento, a menos que a mudança seja intencional e documentada
+- preferir mudanças incrementais em vez de reescrita
+- classificar a profundidade da tarefa antes de criar artefatos
+- usar `docs/` como fonte durável de verdade
+- usar `specs/` como pacote de execução por mudança
+- atualizar docs quando comportamento, arquitetura ou decisões mudarem
+- tornar suposições explícitas
+- escalar para validação humana quando o risco for alto
 
 ---
 
-## Suggested usage pattern
+## Por que este adapter é estruturado desta forma
 
-A practical usage flow is:
+O Copilot funciona melhor quando o contexto é organizado em camadas em vez de despejado.
 
-1. read repository-level rules from `.github/copilot-instructions.md`
-2. apply any relevant scoped instruction file under `.github/instructions/`
-3. choose a matching workflow from `prompts/`
-4. classify task depth using `docs/standards/TASK_DEPTH_POLICY.md`
-5. execute against repository memory in `docs/` and change package structure in `specs/`
+Este adapter, portanto, separa:
+- regras universais do repositório
+- orientações delimitadas por área
+- fluxos de trabalho de execução reutilizáveis
 
----
-
-## What this adapter is not
-
-This adapter is not:
-- a replacement for the AEHF method
-- a license to skip repository memory
-- a giant instruction dump for every situation
-- a Copilot-only fork of the framework
-
-It is simply the Copilot-specific delivery mechanism for the same universal AEHF operating model.
+Essa estrutura ajuda o framework a se manter:
+- mais portátil
+- mais fácil de manter
+- menos repetitivo
+- mais utilizável em diferentes tarefas
 
 ---
 
-## Final rule
+## Padrão de uso sugerido
 
-If Copilot-specific guidance ever conflicts with the AEHF constitution or core standards, the core method wins.
+Um fluxo de uso prático é:
+
+1. ler as regras no nível do repositório em `.github/copilot-instructions.md`
+2. aplicar qualquer arquivo de instrução delimitada relevante em `.github/instructions/`
+3. escolher um fluxo de trabalho correspondente em `prompts/`
+4. classificar a profundidade da tarefa usando `docs/standards/TASK_DEPTH_POLICY.md`
+5. executar com base na memória do repositório em `docs/` e na estrutura do pacote de mudança em `specs/`
+
+---
+
+## O que este adapter não é
+
+Este adapter não é:
+- um substituto para o método AEHF
+- uma licença para ignorar a memória do repositório
+- um despejo gigante de instruções para toda situação
+- um fork exclusivo do Copilot do framework
+
+É simplesmente o mecanismo de entrega específico do Copilot para o mesmo modelo operacional universal AEHF.
+
+---
+
+## Regra final
+
+Se as orientações específicas do Copilot conflitarem com a constituição ou os padrões centrais do AEHF, o método central prevalece.

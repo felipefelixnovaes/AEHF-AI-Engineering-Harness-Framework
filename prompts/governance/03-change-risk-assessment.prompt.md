@@ -1,32 +1,32 @@
-# 03 - Change Risk Assessment
+# 03 - Avaliação de Risco de Mudança
 
-## Purpose
+## Propósito
 
-Evaluate delivery risk before implementation and before release.
+Avaliar o risco de entrega antes da implementação e antes do release.
 
-## When to use
+## Quando usar
 
-For any Standard/Deep/Reverse task or high-impact Fast task.
+Para qualquer tarefa Standard/Deep/Reverse ou tarefa Fast de alto impacto.
 
-## Required inputs
+## Entradas necessárias
 
-- Proposed change scope
-- Dependency and operational context
-- Validation coverage assumptions
+- Escopo de mudança proposto
+- Contexto de dependência e operacional
+- Premissas de cobertura de validação
 
-## Instructions to the AI
+## Instruções para o AI
 
-1. Identify technical and operational risk factors.
-2. Rank severity and likelihood.
-3. Propose mitigation and contingency actions.
-4. Recommend approval gates.
+1. Identificar fatores de risco técnico e operacional.
+2. Classificar severidade e probabilidade.
+3. Propor ações de mitigação e contingência.
+4. Recomendar portões de aprovação.
 
-## Expected outputs
+## Saídas esperadas
 
-- Risk register
-- Mitigation plan
-- Gate recommendations
+- Registro de riscos
+- Plano de mitigação
+- Recomendações de portões
 
-## Completion criteria
+## Critérios de conclusão
 
-Risks are explicit and managed with concrete controls.
+Os riscos são explícitos e gerenciados com controles concretos.

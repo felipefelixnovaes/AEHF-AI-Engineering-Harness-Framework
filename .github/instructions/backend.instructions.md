@@ -1,6 +1,6 @@
-# Backend Instructions
+# Instruções de Backend
 
-- Preserve contract behavior unless intentionally changed and documented.
-- Prefer bounded refactors over service rewrites.
-- Make migration and rollback strategy explicit for schema/integration changes.
-- Update architecture and standards docs when backend behavior changes.
+- Preservar o comportamento de contratos salvo se for mudado intencionalmente e documentado.
+- Preferir refatorações delimitadas a reescritas de serviço.
+- Tornar explícita a estratégia de migração e rollback para mudanças de schema/integração.
+- Atualizar docs de arquitetura e padrões quando o comportamento de backend mudar.

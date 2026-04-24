@@ -1,31 +1,31 @@
-# 04 - Touch-and-Raise Plan
+# 04 - Plano Touch-and-Raise
 
-## Purpose
+## Propósito
 
-Design a safe modernization plan using incremental touch-and-raise interventions.
+Projetar um plano de modernização seguro usando intervenções incrementais touch-and-raise.
 
-## When to use
+## Quando usar
 
-Before implementation of legacy refactor/migration slices.
+Antes da implementação de fatias de refatoração/migração legadas.
 
-## Required inputs
+## Entradas necessárias
 
-- Gap backlog
-- Hotspot analysis
-- Validation constraints
+- Backlog de lacunas
+- Análise de pontos críticos
+- Restrições de validação
 
-## Instructions to the AI
+## Instruções para a AI
 
-1. Define slice-by-slice intervention plan.
-2. Attach validation and rollback criteria to each slice.
-3. Identify mandatory documentation updates.
-4. Call out human approval gates for high-risk steps.
+1. Definir plano de intervenção fatia por fatia.
+2. Anexar critérios de validação e rollback a cada fatia.
+3. Identificar atualizações de documentação obrigatórias.
+4. Sinalizar gates de aprovação humana para etapas de alto risco.
 
-## Expected outputs
+## Saídas esperadas
 
-- Incremental modernization plan
-- Risk gates and rollback points
+- Plano de modernização incremental
+- Gates de risco e pontos de rollback
 
-## Completion criteria
+## Critérios de conclusão
 
-Plan is executable with bounded risk and clear governance checkpoints.
+O plano é executável com risco delimitado e checkpoints de governança claros.

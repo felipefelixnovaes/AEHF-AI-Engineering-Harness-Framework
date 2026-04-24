@@ -1,31 +1,31 @@
-# 01 - Classify Task Depth
+# 01 - Classificar Profundidade da Tarefa
 
-## Purpose
+## Propósito
 
-Choose the minimum safe task depth (Fast, Standard, Deep, Reverse).
+Escolher a profundidade mínima segura da tarefa (Fast, Standard, Deep, Reverse).
 
-## When to use
+## Quando usar
 
-At task intake before artifact generation.
+Na entrada da tarefa, antes da geração de artefatos.
 
-## Required inputs
+## Entradas necessárias
 
-- Requested change scope
-- Impacted components
-- Risk and uncertainty indicators
+- Escopo de mudança solicitado
+- Componentes impactados
+- Indicadores de risco e incerteza
 
-## Instructions to the AI
+## Instruções para o AI
 
-1. Assess complexity, blast radius, reversibility, and ambiguity.
-2. Select depth with clear justification.
-3. List required artifacts for selected depth.
-4. Define escalation triggers to higher depth.
+1. Avaliar complexidade, raio de impacto, reversibilidade e ambiguidade.
+2. Selecionar a profundidade com justificativa clara.
+3. Listar os artefatos necessários para a profundidade selecionada.
+4. Definir gatilhos de escalonamento para profundidades maiores.
 
-## Expected outputs
+## Saídas esperadas
 
-- Depth decision with rationale
-- Artifact checklist
+- Decisão de profundidade com justificativa
+- Checklist de artefatos
 
-## Completion criteria
+## Critérios de conclusão
 
-Team has explicit depth choice and clear next artifact steps.
+O time possui escolha explícita de profundidade e próximos passos claros para os artefatos.

@@ -1,30 +1,30 @@
-# 03 - Legacy Gap Backlog
+# 03 - Backlog de Lacunas Legadas
 
-## Purpose
+## Propósito
 
-Create a prioritized backlog of modernization gaps from discrepancy analysis.
+Criar um backlog priorizado de lacunas de modernização a partir da análise de discrepâncias.
 
-## When to use
+## Quando usar
 
-After discrepancy matrix completion.
+Após a conclusão da matriz de discrepâncias.
 
-## Required inputs
+## Entradas necessárias
 
-- Discrepancy matrix
-- Delivery constraints
-- Team capacity and risk tolerance
+- Matriz de discrepâncias
+- Restrições de entrega
+- Capacidade da equipe e tolerância a riscos
 
-## Instructions to the AI
+## Instruções para a AI
 
-1. Convert discrepancies into executable backlog items.
-2. Define acceptance criteria and validation strategy per item.
-3. Sequence items for minimal operational risk.
+1. Converter discrepâncias em itens de backlog executáveis.
+2. Definir critérios de aceite e estratégia de validação por item.
+3. Sequenciar os itens para risco operacional mínimo.
 
-## Expected outputs
+## Saídas esperadas
 
-- Gap backlog with priorities
-- Suggested incremental delivery order
+- Backlog de lacunas com prioridades
+- Ordem de entrega incremental sugerida
 
-## Completion criteria
+## Critérios de conclusão
 
-Backlog is actionable for touch-and-raise execution planning.
+O backlog é acionável para o planejamento de execução touch-and-raise.

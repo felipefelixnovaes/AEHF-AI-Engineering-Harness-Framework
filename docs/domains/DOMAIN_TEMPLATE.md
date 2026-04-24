@@ -1,21 +1,21 @@
-# Domain Template
+# Template de Domínio
 
-## Domain name
+## Nome do domínio
 
-## Purpose
+## Propósito
 
-## Core capabilities
+## Capacidades principais
 
-## Boundaries and non-goals
+## Limites e não-objetivos
 
-## Upstream dependencies
+## Dependências upstream
 
-## Downstream consumers
+## Consumidores downstream
 
-## Data/entities glossary
+## Glossário de dados/entidades
 
-## Quality constraints (performance, security, reliability)
+## Restrições de qualidade (desempenho, segurança, confiabilidade)
 
-## Operational concerns
+## Preocupações operacionais
 
-## Open questions and assumptions
+## Perguntas em aberto e premissas

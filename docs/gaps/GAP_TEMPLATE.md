@@ -1,17 +1,17 @@
-# Gap Template
+# Template de Lacuna
 
-## Gap ID
+## ID da lacuna
 
-## Gap statement
+## Descrição da lacuna
 
-## Current state evidence
+## Evidência do estado atual
 
-## Target state reference
+## Referência do estado alvo
 
-## Impact and risk
+## Impacto e risco
 
-## Recommended action
+## Ação recomendada
 
-## Priority
+## Prioridade
 
-## Owner
+## Responsável

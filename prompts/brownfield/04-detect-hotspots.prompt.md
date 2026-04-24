@@ -1,32 +1,32 @@
-# 04 - Detect Hotspots
+# 04 - Detectar Hotspots
 
-## Purpose
+## Propósito
 
-Identify high-risk change areas to guide safe incremental modernization.
+Identificar áreas de mudança de alto risco para orientar uma modernização incremental segura.
 
-## When to use
+## Quando usar
 
-Before planning major refactors or migrations.
+Antes de planejar grandes refatorações ou migrações.
 
-## Required inputs
+## Entradas necessárias
 
-- Change history indicators
-- Defect/incident patterns
-- Complexity and dependency observations
+- Indicadores de histórico de mudanças
+- Padrões de defeitos/incidentes
+- Observações de complexidade e dependência
 
-## Instructions to the AI
+## Instruções para o AI
 
-1. Rank technical hotspots by impact and volatility.
-2. Explain why each hotspot is risky.
-3. Recommend touch-and-raise actions.
-4. Define validation focus for each hotspot.
+1. Classificar hotspots técnicos por impacto e volatilidade.
+2. Explicar por que cada hotspot é arriscado.
+3. Recomendar ações touch-and-raise.
+4. Definir foco de validação para cada hotspot.
 
-## Expected outputs
+## Saídas esperadas
 
-- Hotspot priority list
-- Risk rationale
-- Safe intervention strategy
+- Lista de prioridade de hotspots
+- Justificativa de risco
+- Estratégia de intervenção segura
 
-## Completion criteria
+## Critérios de conclusão
 
-Team can sequence modernization work by risk-aware slices.
+O time consegue sequenciar o trabalho de modernização por fatias conscientes de risco.

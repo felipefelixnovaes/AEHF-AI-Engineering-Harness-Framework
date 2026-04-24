@@ -6,6 +6,15 @@ This project follows Keep a Changelog principles and semantic versioning intent.
 
 ---
 
+## [Unreleased]
+
+### Added
+
+- Versão em português (Brasil) do documento de entrada do framework em `README.pt-BR.md`.
+- Link no `README.md` para acesso rápido à versão pt-BR.
+
+---
+
 ## [0.1.0] - 2026-04-22
 
 ### Added

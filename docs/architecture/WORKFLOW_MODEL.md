@@ -1,24 +1,24 @@
-# Workflow Model
+# Modelo de Workflow
 
-## Standard flow
+## Fluxo padrão
 
-1. Classify task depth.
-2. Assemble required artifacts.
-3. Execute in small, verifiable slices.
-4. Validate behavior and risk.
-5. Synchronize docs/specs/changelog.
-6. Capture lessons where relevant.
+1. Classificar a profundidade da tarefa.
+2. Reunir os artefatos necessários.
+3. Executar em fatias pequenas e verificáveis.
+4. Validar o comportamento e o risco.
+5. Sincronizar docs/specs/changelog.
+6. Capturar lições quando relevante.
 
-## Depth-aware expectations
+## Expectativas por profundidade
 
-- **Fast:** minimal artifacts, low-risk scoped edits.
-- **Standard:** balanced rigor for common feature/change work.
-- **Deep:** expanded analysis, stronger validation and risk treatment.
-- **Reverse:** baseline legacy understanding before transformation.
+- **Fast:** artefatos mínimos, edições com escopo de baixo risco.
+- **Standard:** rigor equilibrado para trabalhos comuns de funcionalidade/mudança.
+- **Deep:** análise expandida, validação mais robusta e tratamento de risco.
+- **Reverse:** entendimento da linha de base legada antes da transformação.
 
-## Handoff checkpoints
+## Pontos de transferência
 
-- Orchestrator -> Implementer: accepted scope + artifact list.
-- Implementer -> Reviewer: complete change package.
-- Reviewer -> Validator: accepted technical quality.
-- Validator -> Documentarian: release-ready memory update requirements.
+- Orquestrador -> Implementador: escopo aceito + lista de artefatos.
+- Implementador -> Revisor: pacote de mudança completo.
+- Revisor -> Validador: qualidade técnica aceita.
+- Validador -> Documentarista: requisitos de atualização de memória prontos para release.

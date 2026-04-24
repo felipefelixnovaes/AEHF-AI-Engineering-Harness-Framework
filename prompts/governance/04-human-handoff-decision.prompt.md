@@ -1,30 +1,30 @@
-# 04 - Human Handoff Decision
+# 04 - Decisão de Handoff para Humano
 
-## Purpose
+## Propósito
 
-Determine when human approval/intervention is required.
+Determinar quando é necessária aprovação/intervenção humana.
 
-## When to use
+## Quando usar
 
-When ambiguity, risk, compliance, or business criticality is high.
+Quando a ambiguidade, risco, conformidade ou criticidade de negócio é alta.
 
-## Required inputs
+## Entradas necessárias
 
-- Task depth
-- Risk assessment
-- Domain criticality
+- Profundidade da tarefa
+- Avaliação de risco
+- Criticidade do domínio
 
-## Instructions to the AI
+## Instruções para o AI
 
-1. Evaluate whether autonomous execution is acceptable.
-2. Specify mandatory human checkpoints.
-3. Define decision-ready evidence needed at each checkpoint.
+1. Avaliar se a execução autônoma é aceitável.
+2. Especificar pontos de verificação humanos obrigatórios.
+3. Definir as evidências necessárias e prontas para decisão em cada ponto de verificação.
 
-## Expected outputs
+## Saídas esperadas
 
-- Handoff decision
-- Required approval gates and evidence list
+- Decisão de handoff
+- Portões de aprovação necessários e lista de evidências
 
-## Completion criteria
+## Critérios de conclusão
 
-Human involvement is clearly scoped and timed.
+O envolvimento humano está claramente delimitado e programado.

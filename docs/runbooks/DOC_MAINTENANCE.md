@@ -1,20 +1,20 @@
-# Documentation Maintenance Runbook
+# Runbook de Manutenção de Documentação
 
-## Cadence
+## Cadência
 
-- Perform lightweight doc sync on every merged change.
-- Perform periodic repository-wide consistency review.
+- Realize sincronização leve de docs a cada mudança mesclada.
+- Realize revisão periódica de consistência em todo o repositório.
 
-## Maintenance workflow
+## Fluxo de manutenção
 
-1. Find changed behavior/architecture/process.
-2. Identify impacted docs and specs.
-3. Update memory artifacts in same change package.
-4. Cross-check terminology and links.
-5. Record notable updates in changelog.
+1. Encontre comportamento/arquitetura/processo que mudou.
+2. Identifique docs e specs impactados.
+3. Atualize artefatos de memória no mesmo pacote de mudança.
+4. Faça verificação cruzada de terminologia e links.
+5. Registre atualizações notáveis no changelog.
 
-## Ownership
+## Responsabilidade
 
-- Implementers update immediate docs.
-- Reviewers verify drift is not introduced.
-- Documentarian role drives periodic consistency audits.
+- Implementadores atualizam os docs imediatos.
+- Revisores verificam que nenhuma deriva foi introduzida.
+- O papel de Documentarian conduz auditorias periódicas de consistência.

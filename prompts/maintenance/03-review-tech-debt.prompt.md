@@ -1,31 +1,31 @@
-# 03 - Review Tech Debt
+# 03 - Revisar Dívida Técnica
 
-## Purpose
+## Propósito
 
-Assess technical debt with practical prioritization and actionability.
+Avaliar a dívida técnica com priorização prática e acionabilidade.
 
-## When to use
+## Quando usar
 
-During maintenance cycles or before planning refactor capacity.
+Durante ciclos de manutenção ou antes de planejar capacidade de refatoração.
 
-## Required inputs
+## Entradas necessárias
 
-- Debt candidates
-- Incident/defect trends
-- Delivery constraints
+- Candidatos à dívida
+- Tendências de incidentes/defeitos
+- Restrições de entrega
 
-## Instructions to the AI
+## Instruções para a AI
 
-1. Categorize debt by risk and impact.
-2. Separate urgent safety debt from strategic improvements.
-3. Recommend incremental remediation options.
-4. Indicate expected validation effort.
+1. Categorizar a dívida por risco e impacto.
+2. Separar dívida de segurança urgente de melhorias estratégicas.
+3. Recomendar opções de remediação incremental.
+4. Indicar o esforço de validação esperado.
 
-## Expected outputs
+## Saídas esperadas
 
-- Prioritized debt assessment
-- Recommended remediation roadmap
+- Avaliação de dívida priorizada
+- Roadmap de remediação recomendado
 
-## Completion criteria
+## Critérios de conclusão
 
-Debt plan is realistic, sequenced, and linked to operational outcomes.
+O plano de dívida é realista, sequenciado e vinculado a resultados operacionais.

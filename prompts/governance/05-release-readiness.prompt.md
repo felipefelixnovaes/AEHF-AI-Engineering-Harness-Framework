@@ -1,32 +1,32 @@
-# 05 - Release Readiness
+# 05 - Prontidão para Release
 
-## Purpose
+## Propósito
 
-Assess whether a change package is ready for release with acceptable residual risk.
+Avaliar se um pacote de mudança está pronto para release com risco residual aceitável.
 
-## When to use
+## Quando usar
 
-At final validation before release/merge decision.
+Na validação final antes da decisão de release/merge.
 
-## Required inputs
+## Entradas necessárias
 
-- Validation results
-- Risk register status
-- Docs/spec/changelog sync status
+- Resultados de validação
+- Status do registro de riscos
+- Status de sincronização de docs/spec/changelog
 
-## Instructions to the AI
+## Instruções para o AI
 
-1. Verify checklist completion against release runbook.
-2. Highlight blockers and residual risks.
-3. Recommend go/no-go with rationale.
-4. Suggest follow-up monitoring actions.
+1. Verificar a conclusão do checklist em relação ao runbook de release.
+2. Destacar bloqueadores e riscos residuais.
+3. Recomendar go/no-go com justificativa.
+4. Sugerir ações de monitoramento pós-release.
 
-## Expected outputs
+## Saídas esperadas
 
-- Release readiness assessment
-- Go/no-go recommendation
-- Post-release watch items
+- Avaliação de prontidão para release
+- Recomendação de go/no-go
+- Itens de acompanhamento pós-release
 
-## Completion criteria
+## Critérios de conclusão
 
-Decision is evidence-based, explicit, and auditable.
+A decisão é baseada em evidências, explícita e auditável.

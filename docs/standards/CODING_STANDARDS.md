@@ -1,23 +1,23 @@
-# Coding Standards
+# Padrões de Código
 
-These standards are intentionally concise and universal.
+Estes padrões são intencionalmente concisos e universais.
 
-## Core rules
+## Regras fundamentais
 
-- Preserve existing behavior unless a change is intentional and documented.
-- Prefer incremental changes over broad rewrites.
-- Keep changes scoped and reversible.
-- Make assumptions explicit in specs/reviews.
-- Keep tests and validation aligned with risk level.
+- Preserve o comportamento existente, a menos que uma mudança seja intencional e documentada.
+- Prefira mudanças incrementais a reescritas amplas.
+- Mantenha as mudanças delimitadas e reversíveis.
+- Torne as premissas explícitas em specs/revisões.
+- Mantenha testes e validação alinhados ao nível de risco.
 
-## Legacy-sensitive changes
+## Mudanças sensíveis a código legado
 
-- Use touch-and-raise: improve only the touched area + immediate safety improvements.
-- Avoid speculative architecture replacement.
-- Document discovered constraints and hidden contracts.
+- Use touch-and-raise: melhore apenas a área tocada + melhorias imediatas de segurança.
+- Evite substituição especulativa de arquitetura.
+- Documente restrições descobertas e contratos implícitos.
 
-## AI-assisted contribution rules
+## Regras de contribuição assistida por AI
 
-- Do not invent APIs or behavior without evidence.
-- Verify generated changes against repository conventions.
-- Update docs when behavior, interfaces, or operational flow changes.
+- Não invente APIs ou comportamentos sem evidências.
+- Verifique as mudanças geradas em relação às convenções do repositório.
+- Atualize os docs quando comportamento, interfaces ou fluxo operacional mudar.

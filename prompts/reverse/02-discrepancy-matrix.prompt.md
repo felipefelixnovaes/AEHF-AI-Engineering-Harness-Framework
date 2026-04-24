@@ -1,30 +1,30 @@
-# 02 - Discrepancy Matrix
+# 02 - Matriz de Discrepâncias
 
-## Purpose
+## Propósito
 
-Compare AS-IS and TO-BE expectations to expose modernization gaps.
+Comparar as expectativas AS-IS e TO-BE para expor lacunas de modernização.
 
-## When to use
+## Quando usar
 
-After AS-IS and preliminary TO-BE targets exist.
+Após a existência do artefato AS-IS e dos alvos preliminares TO-BE.
 
-## Required inputs
+## Entradas necessárias
 
-- AS-IS artifact
-- TO-BE goals
-- Constraints and non-negotiables
+- Artefato AS-IS
+- Objetivos TO-BE
+- Restrições e itens inegociáveis
 
-## Instructions to the AI
+## Instruções para a AI
 
-1. Build discrepancy matrix (behavior, architecture, operations).
-2. Classify each discrepancy by impact and urgency.
-3. Highlight unknowns that block sequencing.
+1. Construir a matriz de discrepâncias (comportamento, arquitetura, operações).
+2. Classificar cada discrepância por impacto e urgência.
+3. Destacar incógnitas que bloqueiam o sequenciamento.
 
-## Expected outputs
+## Saídas esperadas
 
-- Discrepancy matrix
-- Risk-classified mismatch list
+- Matriz de discrepâncias
+- Lista de incompatibilidades classificadas por risco
 
-## Completion criteria
+## Critérios de conclusão
 
-Gaps are explicit and can feed a modernization backlog.
+As lacunas são explícitas e podem alimentar um backlog de modernização.

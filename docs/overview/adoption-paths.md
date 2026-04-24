@@ -1,21 +1,21 @@
-# Adoption Paths
+# Caminhos de Adoção
 
-## Greenfield path
+## Caminho greenfield
 
-Use when creating new systems or services.
+Use ao criar novos sistemas ou serviços.
 
-1. Bootstrap context and constraints.
-2. Define architecture and domains.
-3. Build specs by depth.
-4. Implement and validate incrementally.
-5. Capture decisions and lessons.
+1. Inicialize o contexto e as restrições.
+2. Defina a arquitetura e os domínios.
+3. Construa specs por profundidade.
+4. Implemente e valide de forma incremental.
+5. Capture decisões e lições.
 
-## Brownfield path
+## Caminho brownfield
 
-Use when improving or modernizing existing systems.
+Use ao melhorar ou modernizar sistemas existentes.
 
-1. Build inventory and map current behavior.
-2. Identify hotspots, risks, and standards-in-practice.
-3. Create reverse artifacts (as-is, gaps, touch-and-raise plan).
-4. Execute incremental modernization with validation.
-5. Maintain decision trail and memory updates.
+1. Construa o inventário e mapeie o comportamento atual.
+2. Identifique pontos críticos, riscos e padrões praticados.
+3. Crie artefatos reverse (as-is, lacunas, plano touch-and-raise).
+4. Execute a modernização incremental com validação.
+5. Mantenha o rastro de decisões e atualizações de memória.

@@ -1,19 +1,19 @@
-# Reverse Spec Template
+# Template de Spec Reverse
 
-## Legacy scope and boundaries
+## Escopo e limites do sistema legado
 
-## As-is behavior summary
+## Resumo do comportamento AS-IS
 
-## Evidence sources
+## Fontes de evidência
 
-## Discrepancies and unknowns
+## Discrepâncias e incógnitas
 
-## Gap backlog
+## Backlog de lacunas
 
-## Touch-and-raise strategy
+## Estratégia touch-and-raise
 
-## Sequenced modernization slices
+## Fatias de modernização sequenciadas
 
-## Validation and safety controls
+## Controles de validação e segurança
 
-## Documentation and decision updates required
+## Atualizações de documentação e decisões necessárias

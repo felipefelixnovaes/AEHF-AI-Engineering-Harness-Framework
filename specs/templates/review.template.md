@@ -1,16 +1,16 @@
-# Review Template
+# Template de Revisão
 
-## Scope reviewed
+## Escopo revisado
 
-## Findings
+## Achados
 
-- Correctness:
-- Standards compliance:
-- Risk considerations:
+- Correção:
+- Conformidade com padrões:
+- Considerações de risco:
 
-## Required changes
+## Mudanças necessárias
 
-## Decision
+## Decisão
 
-- [ ] Approve
-- [ ] Request changes
+- [ ] Aprovar
+- [ ] Solicitar mudanças

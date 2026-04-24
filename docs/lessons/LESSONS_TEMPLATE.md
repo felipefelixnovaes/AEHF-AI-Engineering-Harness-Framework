@@ -1,10 +1,10 @@
-# Lesson Template
+# Template de Lição
 
-- **Date:**
-- **Change package:**
-- **Context:**
-- **What happened:**
-- **What worked:**
-- **What failed or caused friction:**
-- **Actionable adjustment to framework/process:**
-- **Owner for follow-up:**
+- **Data:**
+- **Pacote de mudança:**
+- **Contexto:**
+- **O que aconteceu:**
+- **O que funcionou:**
+- **O que falhou ou causou atrito:**
+- **Ajuste acionável ao framework/processo:**
+- **Responsável pelo acompanhamento:**

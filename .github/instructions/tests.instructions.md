@@ -1,6 +1,6 @@
-# Testing Instructions
+# Instruções de Testes
 
-- Select validation depth based on task depth and risk.
-- Protect existing behavior with focused tests where infrastructure exists.
-- Avoid deleting tests to satisfy short-term change pressure.
-- Report residual risk when full validation is not feasible.
+- Selecionar a profundidade de validação com base na profundidade da tarefa e no risco.
+- Proteger o comportamento existente com testes focados onde existe infraestrutura.
+- Evitar excluir testes para satisfazer pressão de mudança de curto prazo.
+- Relatar risco residual quando a validação completa não for viável.

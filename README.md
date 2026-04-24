@@ -1,164 +1,164 @@
 # AI Engineering Harness Framework (AEHF)
 
-**Stop vibe coding. Start governed AI engineering.**
+**Pare o vibe coding. Comece a engenharia de AI governada.**
 
-AEHF is an open-source framework for AI-assisted software delivery.
-It helps teams move faster without losing structure, and add control without creating heavyweight process.
+AEHF é um framework open-source para entrega de software assistida por AI.
+Ele ajuda equipes a se moverem mais rápido sem perder estrutura, e a adicionar controle sem criar processos pesados.
 
-AEHF is built for the space between two broken extremes:
+O AEHF foi construído para o espaço entre dois extremos problemáticos:
 
-- **chaotic vibe coding** — fast output, weak memory, inconsistent quality, high rework
-- **heavy process bureaucracy** — rigid rituals, slow delivery, poor adoption, wasted effort
+- **vibe coding caótico** — saída rápida, memória fraca, qualidade inconsistente, alto retrabalho
+- **burocracia de processo pesado** — rituais rígidos, entrega lenta, baixa adoção, esforço desperdiçado
 
-Its core operating principle is:
+Seu princípio operacional central é:
 
-> **Minimum stable structure + depth on demand**
-
----
-
-## Core idea
-
-**AEHF gives AI a stable engineering harness: enough structure to stay reliable, enough flexibility to stay fast.**
+> **Estrutura estável mínima + profundidade sob demanda**
 
 ---
 
-## Why AEHF exists
+## Ideia central
 
-AI can generate code quickly, but speed alone does not create reliable software delivery.
-
-In real projects, teams run into the same problems repeatedly:
-
-- context gets lost between sessions and contributors
-- implementation drifts away from documentation
-- legacy systems remain poorly understood
-- change depth is not matched to process depth
-- every tool invents its own workflow
-- prompts become operational debt
-
-AEHF provides a universal operational model for AI-assisted software engineering through:
-
-- adaptive specs
-- durable project memory
-- execution control
-- lightweight governance
-- continuous evolution
-
-It is intentionally **platform-agnostic** and not tied to Mission Control or any internal system.
+**O AEHF fornece ao AI um harness de engenharia estável: estrutura suficiente para permanecer confiável, flexibilidade suficiente para permanecer rápido.**
 
 ---
 
-## What AEHF is
+## Por que o AEHF existe
 
-- a framework for governed AI-assisted software delivery
-- a repository operating model for AI engineering
-- a durable documentation and memory structure
-- a tool-adapter friendly method that works across ecosystems
+AI pode gerar código rapidamente, mas velocidade sozinha não cria entrega de software confiável.
 
-## What AEHF is not
+Em projetos reais, equipes enfrentam os mesmos problemas repetidamente:
 
-- a replacement for LLMs
-- a multi-agent runtime by default
-- a heavy enterprise process suite
-- an app generator disguised as a framework
+- o contexto se perde entre sessões e contribuidores
+- a implementação se afasta da documentação
+- sistemas legados permanecem mal compreendidos
+- a profundidade da mudança não corresponde à profundidade do processo
+- cada ferramenta inventa seu próprio fluxo de trabalho
+- prompts se tornam dívida operacional
+
+O AEHF fornece um modelo operacional universal para engenharia de software assistida por AI por meio de:
+
+- specs adaptativas
+- memória de projeto durável
+- controle de execução
+- governança leve
+- evolução contínua
+
+É intencionalmente **agnóstico de plataforma** e não está vinculado a nenhum sistema interno.
 
 ---
 
-## The 5 pillars
+## O que o AEHF é
 
-1. **Adaptive Specs**  
-   Use the right level of rigor for the task: Fast, Standard, Deep, or Reverse.
-2. **Project Memory**  
-   Keep architecture, decisions, domains, gaps, and lessons as durable operational memory.
+- um framework para entrega de software assistida por AI governada
+- um modelo operacional de repositório para engenharia de AI
+- uma estrutura durável de documentação e memória
+- um método amigável a adapters de ferramentas que funciona em diferentes ecossistemas
+
+## O que o AEHF não é
+
+- um substituto para LLMs
+- um runtime multi-agente por padrão
+- um conjunto de processos empresariais pesados
+- um gerador de aplicações disfarçado de framework
+
+---
+
+## Os 5 pilares
+
+1. **Specs Adaptativas**  
+   Use o nível certo de rigor para a tarefa: Fast, Standard, Deep ou Reverse.
+2. **Memória de Projeto**  
+   Mantenha arquitetura, decisões, domínios, lacunas e lições como memória operacional durável.
 3. **Execution Harness**  
-   Guide which model, workflow, and validation path to use based on risk and cost.
-4. **Lightweight Governance**  
-   Keep control through ADRs, changelogs, release checks, and documentation policy.
-5. **Built-in Evolution**  
-   Expand safely across new tools, adapters, and operating models without breaking the core method.
+   Oriente qual modelo, fluxo de trabalho e caminho de validação usar com base em risco e custo.
+4. **Governança Leve**  
+   Mantenha o controle por meio de ADRs, changelogs, verificações de lançamento e política de documentação.
+5. **Evolução Embutida**  
+   Expanda com segurança para novas ferramentas, adapters e modelos operacionais sem quebrar o método central.
 
 ---
 
-## Why AEHF improves AI engineering
+## Por que o AEHF melhora a engenharia de AI
 
-AEHF improves real-world AI delivery by reducing:
+O AEHF melhora a entrega de AI no mundo real ao reduzir:
 
-- ambiguous prompts
-- repeated context dumping
-- undocumented assumptions
-- workflow drift between contributors
-- silent divergence between code and docs
+- prompts ambíguos
+- despejo repetido de contexto
+- premissas não documentadas
+- desvio de fluxo de trabalho entre contribuidores
+- divergência silenciosa entre código e docs
 
-And it improves:
+E melhora:
 
-- consistency
-- reviewability
+- consistência
+- revisabilidade
 - onboarding
-- maintainability
-- cost efficiency
+- manutenibilidade
+- eficiência de custo
 
 ---
 
-## Who this is for
+## Para quem é este framework
 
-- solo developers
+- desenvolvedores solo
 - startups
-- software factories
-- enterprise delivery teams
-- teams modernizing legacy systems
+- fábricas de software
+- equipes de entrega empresarial
+- equipes modernizando sistemas legados
 
 ---
 
-## Repository structure
+## Estrutura do repositório
 
 ```text
-README.md                    # launch guide and framework entry point
-CLAUDE.md                    # strict adapter entry point for Claude-style agents
-AGENTS.md                    # operational agent roles and boundaries
-CHANGELOG.md                 # framework evolution log
-CONTRIBUTING.md              # contribution workflow and quality bar
+README.md                    # guia de início e ponto de entrada do framework
+CLAUDE.md                    # ponto de entrada estrito do adapter para agentes no estilo Claude
+AGENTS.md                    # papéis operacionais de agentes e limites
+CHANGELOG.md                 # log de evolução do framework
+CONTRIBUTING.md              # fluxo de contribuição e nível de qualidade
 
-docs/                        # durable operational memory (source of truth)
-specs/                       # per-change execution package and templates
-prompts/                     # reusable operational prompt library
-adapters/                    # tool-specific context delivery guidance
-examples/                    # scenario-driven adoption starters
-.github/                     # copilot instructions, issue/PR templates
+docs/                        # memória operacional durável (fonte da verdade)
+specs/                       # pacote de execução por mudança e templates
+prompts/                     # biblioteca operacional de prompts reutilizáveis
+adapters/                    # orientação de entrega de contexto específica por ferramenta
+examples/                    # pontos de partida de adoção orientados a cenários
+.github/                     # instruções do copilot, templates de issue/PR
 ```
 
 ---
 
-## Get value in 15 minutes
+## Obtenha valor em 15 minutos
 
-- Use `prompts/greenfield/` to start a new project with structure.
-- Use `prompts/brownfield/` to map and stabilize a legacy repository.
-- Use `docs/standards/TASK_DEPTH_POLICY.md` to classify work.
-- Use `specs/templates/` to package change safely.
-- Use adapters to deliver context to your AI tool of choice.
-
----
-
-## Quick start
-
-1. Clone this repository as your framework base.
-2. Read `docs/constitution/CONSTITUTION.md`.
-3. Choose your starting path:
-   - **greenfield**: start from `prompts/greenfield/`
-   - **brownfield**: start from `prompts/brownfield/`
-4. Classify task depth using `docs/standards/TASK_DEPTH_POLICY.md`.
-5. Create specs under `specs/` from the corresponding templates.
-6. Execute changes and keep `docs/` updated per `docs/standards/DOC_UPDATE_POLICY.md`.
+- Use `prompts/greenfield/` para iniciar um novo projeto com estrutura.
+- Use `prompts/brownfield/` para mapear e estabilizar um repositório legado.
+- Use `docs/standards/TASK_DEPTH_POLICY.md` para classificar o trabalho.
+- Use `specs/templates/` para empacotar mudanças com segurança.
+- Use adapters para entregar contexto à sua ferramenta de AI preferida.
 
 ---
 
-## Greenfield workflow (suggested)
+## Início rápido
 
-1. Bootstrap project intent and constraints (`01-bootstrap-project`).
-2. Draft initial architecture (`02-first-architecture`).
-3. Create domain map (`03-create-domain-map`).
-4. Build feature spec (`04-create-feature-spec`).
-5. Implement iteratively with governance checks (`05-implement-feature`).
+1. Clone este repositório como sua base de framework.
+2. Leia `docs/constitution/CONSTITUTION.md`.
+3. Escolha seu caminho inicial:
+   - **greenfield**: comece em `prompts/greenfield/`
+   - **brownfield**: comece em `prompts/brownfield/`
+4. Classifique a profundidade da tarefa usando `docs/standards/TASK_DEPTH_POLICY.md`.
+5. Crie specs em `specs/` a partir dos templates correspondentes.
+6. Execute as mudanças e mantenha `docs/` atualizado conforme `docs/standards/DOC_UPDATE_POLICY.md`.
 
-Artifacts to prioritize:
+---
+
+## Fluxo de trabalho greenfield (sugerido)
+
+1. Inicialize a intenção e restrições do projeto (`01-bootstrap-project`).
+2. Rascunhe a arquitetura inicial (`02-first-architecture`).
+3. Crie o mapa de domínios (`03-create-domain-map`).
+4. Construa a spec de funcionalidade (`04-create-feature-spec`).
+5. Implemente iterativamente com verificações de governança (`05-implement-feature`).
+
+Artefatos para priorizar:
 
 - `specs/templates/standard-spec.template.md`
 - `docs/architecture/REPOSITORY_MODEL.md`
@@ -167,28 +167,28 @@ Artifacts to prioritize:
 
 ---
 
-## Brownfield workflow (suggested)
+## Fluxo de trabalho brownfield (sugerido)
 
-1. Analyze existing repository and constraints (`01-analyze-repo`).
-2. Build current-state inventory (`02-create-inventory`).
-3. Extract implicit domains (`03-extract-domains`).
-4. Detect hotspots and operational risk (`04-detect-hotspots`).
-5. Surface implicit standards (`05-map-implicit-standards`).
+1. Analise o repositório existente e as restrições (`01-analyze-repo`).
+2. Construa o inventário do estado atual (`02-create-inventory`).
+3. Extraia domínios implícitos (`03-extract-domains`).
+4. Detecte pontos críticos e risco operacional (`04-detect-hotspots`).
+5. Revele padrões implícitos (`05-map-implicit-standards`).
 
-For modernization planning, continue with `prompts/reverse/`.
+Para planejamento de modernização, continue com `prompts/reverse/`.
 
 ---
 
-## Adapter model
+## Modelo de adapters
 
-AEHF method is universal; **context delivery is adapter-specific**.
+O método AEHF é universal; **a entrega de contexto é específica por adapter**.
 
-- **Claude adapter**: `CLAUDE.md` is the strict memory entry point.
-- **Copilot adapter**:
-  - global rules in `.github/copilot-instructions.md`
-  - scoped rules in `.github/instructions/*.instructions.md`
-  - reusable prompt operations in `prompts/*.prompt.md`
-- **Generic adapter**: documented in `adapters/generic/README.md`.
+- **Adapter Claude**: `CLAUDE.md` é o ponto de entrada estrito de memória.
+- **Adapter Copilot**:
+  - regras globais em `.github/copilot-instructions.md`
+  - regras com escopo em `.github/instructions/*.instructions.md`
+  - operações de prompt reutilizáveis em `prompts/*.prompt.md`
+- **Adapter genérico**: documentado em `adapters/generic/README.md`.
 
 ---
 
@@ -196,26 +196,26 @@ AEHF method is universal; **context delivery is adapter-specific**.
 
 ### v0.2
 
-- richer prompt variants for testing and migration scenarios
-- additional example playbooks for regulated environments
-- stronger cross-links across docs/specs/prompts
+- variantes mais ricas de prompts para cenários de teste e migração
+- playbooks de exemplo adicionais para ambientes regulados
+- links cruzados mais fortes entre docs/specs/prompts
 
 ### v1.0
 
-- adapter expansion for additional AI tooling ecosystems
-- optional CLI scaffolding without coupling core method
-- optional telemetry/dashboard patterns for governance insights
+- expansão de adapters para ecossistemas adicionais de ferramentas de AI
+- scaffolding opcional de CLI sem acoplamento ao método central
+- padrões opcionais de telemetria/dashboard para insights de governança
 
 ---
 
-## Contributing
+## Contribuindo
 
-See `CONTRIBUTING.md` for contribution flow, quality standards, and review expectations.
+Veja `CONTRIBUTING.md` para o fluxo de contribuição, padrões de qualidade e expectativas de revisão.
 
-If you change behavior, update docs/specs/changelog in the same change package.
+Se você mudar o comportamento, atualize docs/specs/changelog no mesmo pacote de mudança.
 
 ---
 
-## License
+## Licença
 
-MIT — see `LICENSE`.
+MIT — veja `LICENSE`.

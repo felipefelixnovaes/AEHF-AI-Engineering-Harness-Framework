@@ -1,15 +1,15 @@
-# Plan Template
+# Template de Plano
 
-## Goal
+## Objetivo
 
-## Milestones
+## Marcos
 
 1.
 2.
 3.
 
-## Dependencies
+## Dependências
 
-## Risks and contingencies
+## Riscos e contingências
 
-## Exit criteria
+## Critérios de saída

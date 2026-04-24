@@ -1,31 +1,31 @@
-# 01 - Build AS-IS
+# 01 - Construir AS-IS
 
-## Purpose
+## Propósito
 
-Produce an evidence-backed AS-IS model of current legacy behavior.
+Produzir um modelo AS-IS do comportamento legado atual com base em evidências.
 
-## When to use
+## Quando usar
 
-At start of reverse/modernization depth work.
+No início de trabalhos de profundidade Reverse/modernização.
 
-## Required inputs
+## Entradas necessárias
 
-- Legacy code and docs
-- Runtime observations
-- Known incidents or constraints
+- Código e docs legados
+- Observações em tempo de execução
+- Incidentes ou restrições conhecidos
 
-## Instructions to the AI
+## Instruções para a AI
 
-1. Document current behavior and dependencies.
-2. Note uncertainty and confidence per claim.
-3. Capture hidden contracts and operational quirks.
-4. Produce AS-IS artifact using template.
+1. Documentar o comportamento atual e as dependências.
+2. Registrar incerteza e confiança por afirmação.
+3. Capturar contratos ocultos e peculiaridades operacionais.
+4. Produzir artefato AS-IS usando template.
 
-## Expected outputs
+## Saídas esperadas
 
-- AS-IS document draft
-- Evidence traceability notes
+- Rascunho do documento AS-IS
+- Notas de rastreabilidade de evidências
 
-## Completion criteria
+## Critérios de conclusão
 
-Current-state model is good enough to compare against TO-BE intent.
+O modelo do estado atual é suficientemente bom para comparar com a intenção TO-BE.
